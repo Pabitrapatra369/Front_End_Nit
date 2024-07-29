@@ -1,0 +1,88 @@
+<!-- student application form designing  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ex27</title>
+	<link rel="icon" href="logo.webp">
+	<style>
+	  #main{
+		width:260px;
+		margin:auto;
+		border-radius:20px;
+		padding:25px;
+		box-shadow:0 0 15px red;
+		color:lime;
+		background:black;
+	  }
+	  #main:hover{
+		box-shadow:0 0 35px blue;
+		background:teal;
+	  }
+	</style>
+  </head>
+  <body>
+	<div id="main">
+	 <h2 align="center"><u>Registration Form</u></h2>
+	 <form id="frm" action="register.html">
+	  <div>
+		<label for="fna">Fullname</label> <span>*</span> <br>
+		<input type="text" id="fna" name="fna" required autofocus>
+	  </div>
+	  <br>
+ 	  <div>
+		<label for="em">EmailId</label> <span>*</span> <br>
+		<input type="email" id="em" name="em" required>
+	  </div>
+	  <br>
+	  <div>
+	    <label for="ph">Contact number</label> <span>*</span> <br>
+		<input type="text" id="ph" name="ph" required>		 
+	  </div>
+	  <br>
+	  <div>
+	    <label for="dob">Date of Birth</label> <br>
+		<input type="date" id="dob" name="dob" min="1994-01-01" max="2024-07-05"> <br>
+	  </div>
+	  <br>
+	  <div>
+	    <label>Gender:</label> <br>
+		<input type="radio" id="g1" name="gen" value="m" checked> <label>Male</label> &nbsp; 
+		<input type="radio" id="g2" name="gen" value="f"> <label>Female</label> &nbsp; 
+		<input type="radio" id="g3" name="gen" value="o"> <label>Others</label>
+	  </div>
+	  <br>
+	  <div>
+		<label for="course">Which Course?</label> <br>
+		<select id="course" name="course">
+		  <option value="c">C Programme</option>
+		  <option value="fsj">Full Stack Java</option>
+		  <option value="fsdn">Full Stack Dot.Net</option>
+		  <option value="hjs">HTML-JavaScript</option>
+		</select>	  
+	  </div>
+	  <br>
+	  <div>
+	    <label for="mot">Mode of Training</label> <br>
+		<select id="mot" name="mot">
+		  <option value="ct">Classroom Training</option>
+		  <option value="ot">Online Training</option>
+		  <option value="pmt">Placement Training</option>
+		  <option value="pt">Project Training</option>
+		  <option value="intern">Internship</option>		  
+		</select>
+	  </div>
+	  <br>
+	  <div align="center">
+	    <input type="checkbox" id="tc" name="tc" value="true" required> <label>I Accepted all Terms & Conditions</label>
+	  </div>
+	  <br>
+	  <div align="center">
+	   <!--
+	    <input type="submit" name="sb" value="Register Now"> 
+			OR   -->
+		<button type="submit" name="sb">Register Now</button>
+	  </div>
+	</form>
+   </div> 
+  </body>
+</html>		

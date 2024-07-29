@@ -1,0 +1,152 @@
+1.	 Choose the correct option.
+a)	HTML form elements are used for taking user input.
+b)	HTML form elements are defined inside <for> tag.
+c)	HTML 
+
+2.	Which one of the following is a form element?
+a)	text box.
+b)	submit button.
+c)	radio button.
+d)	All of these.
+
+3.	Which one of the following is incorrect?
+a)	<label> tag in HTML is used for creating a tag for form elements.
+b)	id attribute is used with <label> to increase the clickable area of form elements
+c)	 <label> can be used to increase the clickable area of buttons
+d)	None of the above
+
+
+4.	Choose the incorrect option.
+a)	radio button allows to choose only one option from the given options.
+b)	default option can be chosen using attribute "checked" in radio button
+c)	default option can be chosen using attribute "selected" in radio button
+d)	 checkbox allows to choose one or more than one options from the given options.
+
+
+5.	Choose the incorrect option.
+a)	action attribute is used inside starting tag of form.
+b)	 <form action:"home.php"> redirects to the page home.php
+c)	With the use of action, we can redirect to a page once submit button is clicked.
+d)	 None of the above
+
+
+6.	 Choose the correct option.
+a)	Use of method attribute determines by which method the datas in the form will be submitted.
+b)	Method can be POST or GET.
+c)	Default method in HTML is GET.
+d)	All of the above
+
+
+
+7.	Which one of the following does not hold true regarding GET method in HTML?
+a)	Use of GET method in HTML is more secured.
+b)	 Use of GET method enables us to bookmark the page.
+c)	GET has size limitation.
+d)	None of the above
+
+
+8.	 Which one of the following does not hold true regarding POST method in HTML?
+a)	Use of POST method in HTML is more secured.
+b)	POST has no size limitation.
+c)	Use of POST method enables us to bookmark the page.
+d)	 None of these
+
+
+
+9.	Which of the following tag is used for drop down list?
+a)	<text>
+b)	<textarea>
+c)	<select>
+d)	<dropdown>
+
+
+
+10.	How more than one option can be selected in drop down?
+a)	Use of multiple attribute inside <option> tag.
+b)	 use of multiple attribute inside <text> tag.
+c)	 Use of multiple attribute inside <select> tag.
+d)	It is not possible to select more than one option in drop down.
+
+
+
+11.	What is the default type of ‘type’ attribute of <input> element?
+a)	Password
+b)	Text
+c)	Numerals
+d)	Special Characters
+
+
+12.	Which of the following is a new input attribute introduce by HTML5?
+a)	Text
+b)	submit buttons
+c)	Date
+d)	checkbox controls
+
+
+
+
+13.	How does the color attribute work?
+a)	Changes color of the text
+b)	The color picker is defined by it
+c)	Changes background color
+d)	Changes color of the text as well as background
+
+
+
+14.	Which attribute is used for activation of JavaScript?
+a)	Checkbox
+b)	url
+c)	button
+d)	submit
+
+
+15.	Which attribute defines the file-select field?
+a)	checkbox
+b)	file
+c)	button
+d)	text
+
+
+16.	 How image attribute works?
+a)	Set an image anywhere on the page
+b)	 Sets an image background
+c)	Set an image as submit button
+d)	Bring default image to the page
+
+
+17.	Month attribute defines ____
+a)	the only month
+b)	month and year
+c)	date
+d)	 date and time
+
+
+18.	week attribute defines ____________
+a)	 year
+b)	week and year
+c)	week
+d)	 week, month and year
+
+
+19.	tel attribute is supported by the _________ browser.
+a)	Opera
+b)	Chrome
+c)	Safari
+d)	Internet Explorer
+
+
+
+20.	Which attribute is not used on new forms?
+a)	text
+b)	name
+c)	maxlength
+d)	size
+
+
+
+
+
+
+
+
+
