@@ -1,0 +1,51 @@
+<!--example on Js-->
+<h3>Demo on JS operators</h3>
+<script>
+	let x=25,y=9;
+	
+	//arithmatic open -> +,-,*,/,%,** 
+	document.write(x+y,'<br>');
+	document.write(x-y,'<br>');
+	document.write(x*y,'<br>');
+	document.write(x/y,'<br>');
+	document.write(x%y,'<br>');
+	document.write(y**3,'<br>');
+	
+	//relational operators	-> >,<,>=,<=,==,!=    ,===,!==
+	document.write( x>=0,'<br>');
+	let z="9";
+	document.write( y==z,'<br>');
+	document.write( y===z,'<br>');
+	document.write( y!=z,'<br>');
+	document.write( y!==z,'<br>');
+	
+	//Logical operators  -> &&  ||  !
+	document.write(x>= 1&& x<=10 ,'<br>')
+	document.write(!(y<0) ,'<br>')
+	document.write(x>1 || x<=10 ,'<br>')
+	
+	//assignment operator -> =
+	x+=30; //x=x+30;
+	document.write(x,'<br>');
+	
+	//concatination operator -> +
+	
+	document.write(x+"pk" ,'<br>');
+	
+	
+	//increment ope ++ cv+1  ++var  var++
+    //decrement ope -- cv-1  --var  var--
+	//						(pre)   (post)
+	
+	++x;
+	document.write(x++,'<br>');
+	
+	res=10*++x;
+	document.write("res-",res,'<br>');
+	
+	//conditional operator or ternary operator ?:
+	
+	let a=10;
+	document.write(a%2==0?"even":"odd");
+		
+</script>
