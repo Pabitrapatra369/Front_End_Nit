@@ -1,0 +1,34 @@
+<!--simple interest calculator-->
+<!DOCTYPE html>
+<heml lang="en">
+	<head>
+		<title>JS 19</title>
+	<head>
+	<body>
+		<div id="main">
+			<h2 >simple interest calculator</h2>
+			<div>
+				<label for="lmt" >Loan Amount</label> <br>
+				<input  type="text" id="lmt" autofocus>
+				<span>&#8377;</span>
+			</div>
+			<div>
+				<label for="roi" >Rate of Interst</label> <br>
+				<input  type="text" id="roi" autofocus>
+				<span>%</span>
+			</div>
+			<div>
+				<label for="time" >Time</label> <br>
+				<input  type="text" id="time" autofocus>
+				<span>Year(s)</span>
+			</div>
+			<div>
+			<button onclick="calcAmount()">calc Amount</button>
+			</div>
+			<div>
+				<output id="intAmt"></output> <br>
+				<output id="totAmt"></output>
+			</div>
+		</div>
+	</body>
+</html>
