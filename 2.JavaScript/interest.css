@@ -1,1 +1,56 @@
-d
+*{
+	margin:0;
+	padding:0;
+}
+#main{
+	width:300px;
+	height:300px;
+	margin:auto;
+	background-color:black;
+	color:#fff;
+	padding:20px;
+	border-radius:20px;
+	box-shadow:0 0 15px red;
+	transition:linear 600ms;
+}
+#main:hover{
+	box-shadow:0 0 25px blue;
+}
+h2{
+	text-align:center;
+	text-decoration:solid aqua underline;
+}
+#main >div{
+	padding-bottom:20px;
+}
+label,input,span,output{
+	font-size:18px;
+	
+}
+input{
+	outline:none;
+	border:none;
+	background:none;
+	color:white;
+	border-bottom:2px solid aqua;
+}
+output{
+	color:aqua;
+}
+button{
+	width:180px;
+	height:35px;
+	border:0;
+	outline:none;
+	font-size:25px;
+	/*background:linear-gradient(to right, auqua,blue); 
+	color:white;  */
+	border-radius:4px;
+	transition:linear all 500ms;
+	display:block;
+	margin:auto;
+}
+button:hover{
+	cursor:pointer;
+	border-radius:15px;
+}

@@ -3,13 +3,14 @@
 <heml lang="en">
 	<head>
 		<title>JS 19</title>
+		<link rel="Stylesheet" href="interest.css" />
 	<head>
 	<body>
 		<div id="main">
 			<h2 >simple interest calculator</h2>
 			<div>
-				<label for="lmt" >Loan Amount</label> <br>
-				<input  type="text" id="lmt" autofocus>
+				<label for="pamt" >Loan Amount</label> <br>
+				<input  type="text" id="pamt" autofocus>
 				<span>&#8377;</span>
 			</div>
 			<div>
@@ -22,7 +23,7 @@
 				<input  type="text" id="time" autofocus>
 				<span>Year(s)</span>
 			</div>
-			<div>
+			<div >
 			<button onclick="calcAmount()">calc Amount</button>
 			</div>
 			<div>
@@ -30,5 +31,6 @@
 				<output id="totAmt"></output>
 			</div>
 		</div>
+		<script src="interest.js" ></script>
 	</body>
 </html>
