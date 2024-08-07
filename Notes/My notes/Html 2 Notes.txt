@@ -1,0 +1,229 @@
+Form elements(html forms)
+____________________________________________________________________________________________
+
+1.Input tag:
+-----------
+>input tag is used create a form elements(input elements)
+>these elements are used to take input / accept data from users
+>input is un-paired tag and inline elements
+
+syn:
+	<input attributes>
+>it shows the number of letter inside box according to font size
+> input attribute tag: "size", "id", name(we can use any word in id & name), "required" (necessary), autofocus
+> data inside input text box can be access by id attribute.
+> you can take id and name attribute same or different. 
+> most used attribute is placeholder. if placeholder showing then data not available and if placeholder not showing then data available. 
+
+2.label tag:
+------------
+>label tag used for display the label
+>label displaying outside the input box 
+
+required:
+-----------
+> Star symbol(*) means its necessary or not , but if we use "required" its compulsory.
+
+autofocus:
+-----------
+>"autofocus" attribute used for cursor automatically inside the text box. 
+>if we use 2 or 3 autofocus attribute then only inside the last text box cursor blinking. 
+
+Password:
+---------------
+>if you want to data print in secrecy/private mode, then use password element.
+>whenever you want to take data in private mode .
+>
+
+for:
+-------
+>in old version this is not available.
+>it link the label with input text box.
+>without for they are just elements.
+
+number:
+----------
+>this only allows number inside the input box.
+>only "e" is allowed because its exponential. (e=2.7)
+>special character are also allowed.
+>there are 2arrows available inside the box. These arrows are called number spinner.
+>default value is 0.
+>it's upper boundary is +infinity to lower boundary is -infinity .  
+
+min, max, step:
+----------------
+>Min & max are used to fix the range.
+>step is used to increase how much at a time.
+
+button:
+---------
+>basically we have 3 buttons i.e. reset, submit, image
+> reset=>clear all values (it cleans all the data enter by user)
+> in a form input field and reset in same page only.
+
+reset:
+---------
+>attribute=> value
+>one form only have one reset button
+
+submit:
+---------
+>it helps to send data to server.
+>it not directly send data to server , it only start the process for sending data to server.
+>browser can't understand that form fill-up complete or not ,so we use submit button. 
+>input element and submit button should be in same form.
+>it's must to use id and name attribute in submit button. 
+>if there is no id and name server treat as anonymous.
+>after press submit button it takes data and again validate data.
+
+image in input tag:
+---------------------
+>it also help in send the data by using image.
+
+
+
+Form Tag:
+-----------
+>form tag equivalence to application form. 
+>form is a group of input elements.
+>used to collect the data (input value) from user and submitting to server side programme.
+>web page/body tag may contain multiple forms.
+>it is also a container (only input tag preferable), block level & paired tag.
+
+syn: 
+	<form attributes>
+	  UI design
+	</form>
+
+action attribute:
+-----------------------
+>it use to write the URL of webpage.
+
+https:
+----------
+>https establish the connection between server and client
+>protocol duty is to establish connection between devices
+>t transport
+>s security
+>ht hypertext formed by html.
+
+method:
+-----------
+>way specification are called methods.
+>methods are 6 types get(default), post
+>if data display its get method otherwise post method
+
+             get                            post
+----------------------------       --------------------------
+
+=>displaying users data in url      =>not showing
+=>maintains in history              =>not maintains History
+=>less secure                       =>more secure
+=>max data limit 5.7KB              =>no limits
+=>it supports bookmark              =>it not support bookmark
+
+>if web page cointin any password type fields use Post and in other case use Get method.
+>by default html store "yyyy-mm-dd" as date.
+>date and time follows the system setting time and date format.
+>email,url,date,time,week,month,color field are new concepts.
+>button is semantic tag. 
+
+checkbox and radio button:
+-----------------------------
+> here only we asked the question and user select the answer.
+> if user select more than one option we use checkbox otherwise radio button.
+>by default value of check box is on or off.
+>value attribute is compulsory to avoid confusion.
+
+
+file:
+-------
+>it only upload one file
+>after using "multiple" attribute it can upload many number of files
+>there is no restriction in file size
+>after using "accept" attribute we can upload some specific files
+>here method attribute must be "post" because get method has data limit upto 5.7kb.
+
+important are:- text, password, submit, date, check, radio
+2nd most important:- email, file, reset
+
+Select tag:
+-----------------
+>its use for dropdown/combo box
+>syn:   <select>
+		<option></option>
+	</select>
+
+textarea tag:
+--------------
+>multiline text box
+>paired and inline tag
+>syn: <textarea></textarea>
+>Each line allows 20 character.
+
+
+                                       Semantic Tags(only for HTML-5)
+-------------------------------------------------------------------------------------------
+
+datalist & option tags:
+------------------------
+> suggestion created by option and grouped by datalist.
+> when we start to typing something then only its visible.
+
+details & summary tags:
+------------------------
+> both are block level and paired
+
+mark, output, base:
+---------------------
+> mark tag used to highlighting and default color is yellow.
+> mark is inline , individual, paired tag.
+> output tag is used to display result of js in same page/current page. 
+> without js if use output look like span tag.
+> base tag give shortcut or simplify the URL links.
+> base tag use inside head tag.
+
+iframe tag:
+--------------
+> inline frame => merge(image, page, video, map)
+
+
+header, nav, main, section, article, aside, footer tags:
+----------------------------------------------------
+> these are HTML structural tags
+> these are similar as div tag.
+> it only contain the tags nothing else they can do.
+> we can use lot of section tag
+> nav tag used only for menu bar we can't place other things except hyperlink. 
+
+figure & figcaption tags:
+----------------------------
+> it also similar as div.
+
+audio & source tag:
+--------------------
+> used for display audio
+> inside source tag we can give link
+> here autoplay depend on browser
+ 
+video & source tag:
+---------------------
+> here autoplay not depend on browser
+
+     meta:
+-----------------
+> background information about something known as meta
+> data about data
+> provide information to browser
+> page configuration
+> info about SE-search engine
+> UTF-uniform text format
+> characterset use only when translation
+> UTF-8  specilialition they have the capability to communicate with most of the nationalised languages and most of the popular language.
+> if we can't use Content="width=device-width" then it shows the content according to developer screen resolution.
+> <meta name="keywords" content="HTML, CSS, JavaScript"> used for store important words in webpage  and helps in google search engine
+> <meta name="description" content="HTML and CSS tutorial"> use to give some description and show maximum 2 lines even if we give more than 2 lines.
+> <meta http-equiv="refresh" content="5"/> is used to refresh the web page.
+auto redirecting page
+---------------------
+<meta http-equiv="refresh" content="10;URL=ex27.html"/>

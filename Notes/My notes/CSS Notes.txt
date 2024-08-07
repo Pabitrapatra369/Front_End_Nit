@@ -1,0 +1,334 @@
+CSS:
+----
+>Cascading style sheets 3
+>Released in 1996 and maintained by W3C Org
+>Used to change look/feel of html elements(makeover)
+ Like color, background, border, alignment, wallpaper, animations, size of element, padding, margin, opacity etc...
+>CSS provides only styles but not tags
+>style is group of properties or is a rule
+
+
+Where we can define styles?
+we can define styles in 3 places, those are:
+	>Inline styles
+	>Internal styles
+	>External styles
+
+
+Different ways to implement css:
+Inline(1st Approach)
+--------------------
+Html tag and css properties both are defined within the same line 
+Syn:-
+	<tag style="property: value; property: value;... " >
+	Unique style or personal style
+
+Internal(2nd Approach)
+---------------------
+Html tags and css style are designed in the same program, but not in the same line.
+   Internal css should be implement in Style tag, style tag must be implements in style tag, style tag must be sub tag "head" tag.
+   
+Syn:-
+   <style>
+    tag{                     //selecter
+		property:value;
+		property:value;
+		.....
+		}
+	tag{
+		property:value;
+		property:value;
+		.....
+		}
+	Etc.........
+	</style>
+External (3rd Approach)
+Css style are defined in separate file and should be save with ".css", html code designed in separate file should be save with saved with ".html" Use link tag for mapping css file to html file
+Syn: <link rel="stylesheet" href="filename.css"/>
+->this is called as global styles.
+file.css
+1.no html code
+2.no <style> tag
+3.it allows only selecter
+
+
+1.can we run /execute css file?
+  NO
+2.if i run css files what happens?
+  sournce code display in the output
+  
+  
+colors:
+-------
+color:text color
+background-color:background-color only going to change
+border-color:border color going to change
+
+css border properties
+---------------------
+>border-left,border-top , border-righnt,border-bottom instead of use all these we can use simple border
+line values- solid ,double,dashed,dotted ,inset,outset ,ridge ,groov,none
+css outline properties
+---------------------
+>outline-left,outline-top , outline-righnt,outline-bottom instead of use all these we can use simple outline
+line values- solid ,double,dashed,dotted ,inset,outset ,ridge ,groov,none
+border radius
+----------------
+for applying border radius background-color or border-color border radius not visible
+shadow:
+--------
+  box-shadow:Xpx Ypx Zpx color;
+  text-shadow:Xpx Ypx Zpx color;
+
+css font and text
+------------------
+font and line height by default it is 24px
+font-size:Npx;
+font-style:italic;
+fotn-weight:bold;
+font-family:'MV Boli','','',''; //if first famity not support then the next family is going to apply in client family
+***%= container size*N%/100;
+   x% =>container Width*n/100
+   y% =>container height*n/100
+letter-spacing:Npx;
+word-spaceing:Npx;
+line-height:Npx;
+text-decoration:underline overline strike-through none;
+text-align:center justify 
+css column and overlflow
+---------------------------
+columns:N;
+overflow:
+auto-side scrollbar
+hidden-cut the extra data
+scroll- two scroll bar are available
+
+css wallpaper
+-------------
+background-image:url(link of image);
+
+        background-image: url(material/1.jpg);
+		background-repeat: both; ->no-repeat,repeat-x,repeat-y;
+		background-position:
+		left	top
+		center	middle/center
+		right   bottom
+        background-size:Npx Npx;
+						auto,cover;
+						
+						
+ Demo on css list's
+ -------------------
+ list-style-type:  ;
+	decimal
+	upper-alpha
+	lower-alpha
+	upper-roman
+	lower-roman
+	disc
+	circle
+	square
+	+
+	lower-greek,decimal-leading-zezo,none ,'1','text',telugu,oriya,devanagari
+ list-style-image:url();
+ wallpaper
+ -----------
+ background-attachment:scroll,fixed;
+ opacity:0                     to         1
+		full transparent    no transparent
+		0.6->60%-> means 40% visible
+		
+gradient colors
+---------------
+mono color-single color
+gradient - multicolor
+gradient:linear,radial,conic;
+
+Note-we should use background only not background-color for appling gradient
+background:linear-gradient(direction,c1,c2,c3....)
+			              (30deg ,red,blue,green) 
+						  directions-to top,to bottom,to left,to right
+		   radial-gradient(shape,c1,c2,c3.........)
+						  oval
+						  circle
+		   conic-gradient(c1,c2,c3............. )
+
+ 
+ Display Property in css
+ -----------------------
+to change the way of displaying 
+    inline->convert bloack tags into inline tags
+	block->convert inline tags into block tags
+	inline-block -> it applies both properties of inline and block into a element
+    none->none is using to hide the  data &   radio color can be change by accent-color
+	flex
+	grid
+
+css padding & margin
+----------------------
+padding-tag edge to internal item
+margin-tag edge to outside container
+padding: top/bottom left/right;
+padding:top right bottum left;
+
+margin: top/bottom left/right;
+margin:top right bottum left;
+
+padding-left,padding-right, padding-top, padding-bottom, padding
+margin-left,margin-right,margin-top,margin-bottom,margin
+
+->before applying we margin apply position property first 
+---->margin:auto;--->horezontaly the container is comes to center.
+css position property
+-----------------------
+       position :absolute,relative,fixed,sticky;
+Absolute:if it is absolute it takes margin according to browser body tag or contrainer.(porticular area priority)
+relative:if it is relative it takes margine according to its previous tag boundary.(gap priority)
+fixed:it fixes that element on the original position.
+sticky:it scrolling upto browser top and stops there, add top and left.
+		position:sticky;
+		  top:1px;
+		  left:1px;
+css box model:
+--------------
+              |--------------------------------------|
+				margin                               |
+				-------------------------------------|
+					border                           |
+					----------------------------|    |
+						padding                 |    |                 
+					    --------------------|   |    |
+							content layar   |   |    |
+						--------------------|   |    |
+						                        |    |
+					----------------------------|    |
+                                    				 |
+				-------------------------------------|
+-->margin is not added in box model.
+css selectors:
+---------------
+=>selector is nothing but style rules
+=>selectors are used to define styles for elements/tags.
+=>means we are customizing existing styles of elements/tags.
+=>selector should be define either in internal or external scop.
+syn:			
+				selector{
+					prop:val;
+					prop:val;
+					........
+				}
+				
+Types of selector:
+------------------
+		universal(*), id(#), class(.), tag, child(space), direct child(>), attribute([]), group(,), pseudo classes(:), pseudo element(::)
+		
+universal selector:
+-------------
+->same styles for all elements/tags go for universal expect some tags like meta, title...
+			syn:    *{
+						prop:vlaue;
+					}
+Tag Selector/element Selector
+-----------------------------
+->same style for all instances of elements/tags
+syn:	  tag-name{
+				prop:value;
+			    ......
+				}
+Id Selector
+-----------------------------
+->different style for all instances of elements/tags
+syn:	  id-name{
+				prop:value;
+			    ......
+				}
+mapping
+		<tag id="id-name"></tag>
+		
+->id should not be repeat
+->it works like inline css 
+class Selector
+-----------------------------
+->styles for more than one or a group
+syn:	  class-name{
+				prop:value;
+			    ......
+				}
+mapping
+		<tag class="class-name">
+		<tag class="class1 class2 class3 ....">
+class can contain multiple class name but it will apply the style according to the exetution or from style tag not from class=" " name order.
+
+
+child Selector
+-----------------------------
+->it applies the styles  for the child or grand child tags
+syn:	tag tag tag gptag ptag ctag{
+									prop:value;
+									......
+								   }
+direct-child selector:
+----------------------
+		 
+syn:   ptag > ctag{
+					prop:value;
+					.......
+				  }
+				  
+				  
+flex:
+------
+>it is a layout
+>flex follows row matrix or column matrix
+	       display:flex;
+		   flex-direction:row; column,column-reverse,row-reverse
+		   gap:10px;
+		   flex-wrap:nowrap; wrap
+		   justify-content:start; end,center.
+> for gap between one element to another element justify-content: space-between, space-around(if total space 100px then split it like 8 16 16 16 16 8), space-evenly (8 8 8 8 8 8);
+
+    flex items => n
+        space/n-1 => between
+          space/n => around
+          space/n+1 => evenly
+
+
+grid:
+-----
+>it is also a layout
+>gris follows square matrix or rectangle matrix(rows & columns)	 
+> Grid:-  grid always create 1column (default). every auto represent one column.
+>grid-templet-column:100px
+Transition:
+--------------
+> changing one shape to another shape.
+> if we want different changes for different times then transition: width 1s, border-radius 0.4s;
+> transition without any value (slow fast slow) 
+              transition: linear 600ms;(equal speed/uniform speed)
+
+Transform
+----------
+>default size 1;
+    transform:  scale(1.3);
+				scaleX(1.5);
+				scaleY(1.5);
+				skew(20deg);
+				skewX(20deg);
+				skewY(20deg);
+				skew(10deg,20deg);
+				rotateX(60deg); //top to bottom
+				ratateY(60deg); //left to right
+				ratateY(60deg); //normal rotating
+				translateX(left margin);
+				translateY(top margin);
+				translate(x,y);
+				
+
+
+
+
+
+
+
+
+

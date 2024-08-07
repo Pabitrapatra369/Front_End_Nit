@@ -1,0 +1,361 @@
+						JavaScript
+						----------
+What is Scripting ?
+------------------
+ >A script is program code that doesn’t need pre-processing (e.g. compiling) before being run. In
+ the context of a Web browser, scripting usually refers to program code written in JavaScript that
+ is executed by the browser when a page is loaded, or in response to an event triggered by the
+ user.
+
+Client-side script:
+------------------
+>These scripts are getting executed within the web browser(client).
+>Here we don't need any software.
+>these scripts are used for client-side validatinos(data verification & data validations)
+	Ex: JavaScript, VBScript, typescript etc..
+Server-side script:
+------------------
+>A script which executes in server machine with support of the web-server/app-server software’s like IIS(Internet information services), Tomcat, JBOSS, etc.
+>These scripts are used for server-side validations (authentication & authorization).
+ Ex: php, jsp, asp.net, VueScript, Express Script, nodeJS, cgi, perl etc…
+JavaScript Introduction
+-----------------------
+>In 1995 javaScript was created by a Netscape(Mozilla) developer named "Brendan Eich".
+ 			
+		Mocha(1995) --> LiveScript -->JavaScript(1997-dec)
+>Netscape first introduced a JavaScript interpreter in Navigator 2.
+
+Why is it called  JavaScript ?
+---------------------------------
+--> WhenJavaScript was created, it initially had another name: “LiveScript”. But Java
+ was very popular at that time, so it was decided that positioning a new language
+ as a “younger brother” of Java would help.
+ But as it evolved, JavaScript became a fully independent language with its own
+ specification called ECMAScript, and now it has no relation to Java at all.
+ JS ES
+ Later JavaScript became an ECMA (European Computer Manufacturers Association
+ Script) standard in 1997. ECMAScript is the official name of the language.
+ ✔JavaScript is implementation of ES; ES is the specification of JavaScript.
+ RBI SBI, HDFC, ICICI customer
+ ES JS Programmer
+--->JavaScript is a Speed, light weight, Interoperability, Extended Functionality, dynamic, loosely typed, cross platform, free ware and open-source.
+	Speed->ja applications runs faster than...
+	light weight->less code more operations
+	Interoperability-> JavaScript they have the capability to work within other web technologies
+	Extending Functionality->lib ->live
+	Dynamic typed->with out declaring vars we use can directly
+	loosely typed->defined any var in JS, that allows to store any type value
+	cross platform->cross platform compatible
+>Its single threaded programme
+>JavaScript is an object-based or prototype-based programming.
+	-Oops
+>javaScript is client-side(browser-side)  programming. That means its executes on the browser.
+>It can  also be used in server-side by using Node, ASP, PHP
+>JavaScript is a case sensitive programme(mixed case)
+>To work with  JavaScript, we don't need to install any software.
+>JavaScript is "Interpreter-based" programming, means the code will be converted into machine language line-by-line. JavaScript interpreter is already embedded in Browsers.
+ 	Parser:
+		JS code(high) <->JS parser <-> machine code
+	Js Engine:
+		V8-Chrome,Edge and Opera
+		spiderMonkey->Fire
+
+How many ways to imp js?
+--------------------------
+>inline scripting
+	onclick, on submit,
+	<tag event="js code" event="js" event="js">
+>internal scripting
+  <head>/<body>
+	<script type="text/javaScript">
+	  js code
+	</script>
+  </head>/<body>
+>external scripting
+	<script src="filename.js"></script>
+	
+	
+function defination syn:
+------------------------
+function fun-name()
+{
+     statements
+}
+calling syn:
+   fun-name(); <-html inline or internal script
+-------------------------------------------------------------------------------------------------------------
+>JS->lib->collecection of predefined programs
+reserved words,operations,functions,methods,classes and objects(implicit)
+
+>object is an instance(dynamic memory block for the specified class) of class( copy of class)
+>object is a collection of properties & methods
+
+"window" is the base object for all JS objects	
+	"window" object used to interacting with browser windows to perform some operations.
+	>it is implicit object
+"document" is the sub object of window.
+	"document" object used for interacting with web page/web documents to perform some operations.
+	syn:	window.document     or   documents
+"console" is the sub object of window.
+	"console" object used for interacting with browsers console to perform some operations.
+	syn:	window.console      or   console
+	press F12 key
+	
+JavaScript Printing methods:
+-----------------------------
+write() method:The  write() method writes HTML expressions or javaScript code to a document without line breaking.
+syn:	window.document.write(val1,val2,val3......);
+writeln() method:The write() method writes HTML expressions or javaScript code to a document with line breaking.
+syn:	window.document.writeln(val1,val2,val3......);
+log() method:The log() method writes HTML expressions or javaScript code on  browser's console(press F12 key)with line break.
+syn: window.console.log(val1,val2,val3...);
+
+some important points on javaScript
+-----------------------------------
+>we can use all  above methods without "window".
+>there is no need of semicolon at the end of every statement because semicolon is optional.
+>js is case sensitive.
+>javaScript is always shows error but error shows in the console
+>if error is there then it skips from error line up to script tag(type error)
+>in some cases the total script tag is going to thrown out(Syntax error).
+>you can't use direct html tags in javaScript but you can use with  the help of literal
+
+
+literals
+----------
+#5 type of literals are in javaScript
+->string literal("" and '') 
+		-string literal is used to represent string/text.
+		-js1 
+		-SL supports one line of text.
+		-not supports interpolation.
+		-"" or '' both are same in javaScript.
+->template literal(``---backtick)
+		-string literal is used to represent string/text.
+		-since js6 (ES).
+		-TL supports N lines.
+		-it supports interpolation.
+
+Working with varibales
+----------------------
+>variable is a reference name fo a memory block.
+>variables are created or stored in RAM (stack area).
+>variables are used to store/to hold a value for reuse purpose and automatically substritute values in steps.
+
+RAM
+----
+JS Runtime Area
+>Stack Area (variables, params, Current Run code )
+>Heap Area	(array, objects, funs)
+>Class/Method Area( class, constructor, static items )
+>Register Area (sceduling the programs is happen in this  area)
+How to declare a variable ?
+---------------------------
+> we can define vars in js Three ways, those are:
+	>by using "var"
+		Syn: var varname; <-declaration
+				or
+			var varname=value; <-initialization
+	>by using "let"(since js6)
+		Syn: let varname; 
+				or
+			let varname=value; 
+	>by using "const"(since js6)
+		Syn: const varname=value; <-initialization
+
+Where do we declare variables >
+
+>We can declare varibles in open script tag(global), within function(local) or within block (block level)
+
+Rules for variables naming
+---------------------------
+>Name should start with an alphabet (a to z or A to Z), underscrore(_), or dollar( $) sign.
+>After the first claracter we can use digits(0 to 9)
+>Variables are case sensitive. For example , a and A are different variables.
+>Space is not allowed, means name should be a single word.
+>Special chars( symbol ) are not allowed in name, except _and $.
+
+Rules for variable in javaScript
+--------------------------------
+>var let support modification const not support modification and you have to initialize at the time of declaration.
+>var support redefinition but not let.
+>var support hoisting but not let.
+
+			    	var      let    const
+declaration			Y		Y		N
+assignign			Y		Y  		N
+initialization		Y		Y		Y
+modification		Y		Y		N
+version				Js1		ES(6)	ES(6)
+
+difference
+		var								let
+>global/external Js	            >local, block level
+>support re-defination			>not support
+>support var hoisting			>not support
+>since js1						>since js6
+>sir suggest to use let
+
+declaration-allocating memory
+initialization-memory allocation and storing data at same time called initialization.
+assignign- storing the data for already declared variable.
+
+---------------------------------
+re-defination -declaration two 
+hoisting- use before declare after
+loosely typed- if we declared any variable in js we can store any type of data.
+dynamically typed
+------------------
+>if we don't declaration any variable we can use the variable
+>it stores that variable in window object.
+>by defualt it take the variable as "var" bcz it is present from first version of javaScript.
+
+JavaScript Datatype:
+---------------------
+In JavaScript data types are classified into the following two cat.
+1.Primitive datatype
+2.Non-primitive datatype
+
+			Primitive datatype						Not-PDT
+	>PDT type allow storing data directly		>reference/address
+	>PDT allow us to store only 1 value at		>N values
+	 a time
+	>stack area									>Heap Area
+	>Not shereable								>Shareable
+	>These are popularly known as non-reference >reference data type
+	>predefined data types						>used defined data
+	>no new key word							>new keyword is available(or [] ,{}) any of the three
+Primitive data types
+---------------------
+>>string,number,boolean,undefined,null(object)
+Non-Primitive data types
+------------------------
+>>Array,class&oject,functions
+
+Type of
+---------
+#by the use of typeof keyword you can know which type of data it is.
+
+syn: typeof var-name
+	 typeof value
+--------------------------------------------------------------
+const d = new Date();
+>date class object created and initialize with default value and stores the address in d reference value.
+
+
+JavaScript Operators
+-----------------------
+>Operator is a symbol (special char) and it is used to perform certain operation (task).
+
+>Every operator is a symbol, but every symbol is not an operator.
+>Every operator requires some values, those are called operands. 
+
+Ex: a+b
+
+Operators in JavaScript
+-----------------------
+There are 3 types of operator in javaScript
+1.Unary -> it  requires one operands
+			>increment ++
+			>decrement --
+1.Binary -> it  requires Two operands
+			>Arithmetic  -> +,-,*,/,%,** 
+			>Relational  -> >,<,>=,<=,==,!=    ,===,!==
+			>Logical	 -> &&,||,!
+			>Assignment  -> =
+				>short hand  -> +=,-=,*=,/=,%=,**=
+			>Concatenation -> +
+1.Ternary -> it  requires Three operands
+			>Conditional  ? :
+			
+			
+MAIN Operator Precedence
+------------------------
+1) ()   			  -paranthesis
+2) .  				  -dot
+3) [] 				  -square bracket
+4) pre ++ ,pre --
+5) **                 -power
+6) *,/,%              arithmetic
+7) +,-   			  arithmetic
+8) >,<, >= , <=  	  relational
+9) ==, !=, === , !==  relational
+10) =                 assignment  
+11) post ++, post --
+
+parsing
+-----------
+   Changing the data mode from string format to number format
+>types
+	1.Auto parsing(implicit)
+		All type subtraction,all type of products, all type of division,increment
+	2.Manual parsing(explicit)
+		a.using functions
+			i)parseInt();
+				predefined function of window,used string based int converts into integer format.
+				syn:	window.parseInt("value")
+				    "100" -> 100
+					"10.79"-> 10
+					"rama" -> NaN(Not a Number)
+			ii)parseFloat();
+				predefined function of window,used string based int converts into floating format.
+				syn:	window.parseFloat("value")
+				    "100" -> 100
+					"10.79"-> 10.79
+					"rama" -> NaN(Not a Numeric)
+		b.using parse operator
+			-> + is parse operator
+			-> Unary operator use only left side(prefix)
+			syn:	+"value" or +variable
+					+"10" ->10
+					+"10.56" ->10.56
+					+"ram" ->NaN
+					
+dilog boxes in JS
+-----------------
+>alert box -> used to display data to user
+				syn: window.alert(data)
+
+>confirm box ->used to take the confirmation (cross check) from user.
+				syn:window.confirm(data)
+				
+>prompt box ->used to take the input from user .
+				syn: window.prompt(data)
+	
+Events
+------
+onclick
+oninput --at typing change will happen
+
+controll statement
+------------------
+Anonymous block
+	{
+	   steps
+	}
+if/else/for/while/do/addition
+	{
+		steps
+	}
+	if => true block
+	else =>false block
+	
+	if is decision making
+	switch is selection
+
+	
+	
+	
+	
+	
+	
+   
+
+
+
+
+
+
+
+
+

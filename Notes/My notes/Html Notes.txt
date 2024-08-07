@@ -1,0 +1,422 @@
+                        **HTML**
+web tech
+   1.Frontend Tech(html, css, js)-Client side
+   2.Backend Tech(advJava,asp.net)-Server Side
+
+Web Site:-
+what is websites?
+-website is a collection of information
+-website is a collection of "webpages"
+-webpage is a group of html elements
+-element is nothing but heading , para, img, button, textbox, password, checkbox, radio, div, table, link, audio, video etc...
+-using html tags we can create elements	
+-collection of websites/web applications represented as "WWW"
+-World wide web is represents group of connected servers(processing server, db server, mail server, proxy server, dns server...)
+
+**Web Page**
+Two Types
+1)Static
+	-Static pages always show same data. means user-user, time-time, place-place 
+         it not changing the data automatically.
+	www.abc.com-Siva, ram, Sam- same
+		   -7am, 7pm- same
+		   -Hyderabad, USA, UK 
+	-Frontend tech points
+        
+2)Dynamic
+	-Dynamic pages always changing/updating
+		means user-user, time-time, place-place its changing data
+  		automatically.
+	-Backend tech points
+Types of computer
+  Based on performance and storage capacity
+	1.mini
+	2.micro(out laptop)
+	3.mainframe
+	4.super
+  Based on working style
+	1.Analog
+	2.Digital(out laptop)
+	3.Hybrid
+Server: 
+-------
+	-it is a super computer
+	-a server stores all the data associated with the websites that are hosted by it and share that info    with all computers and mobile devices (Clients) that need to access them.
+
+Client:
+-------
+	-it is device
+	-which device are supporting to access data available in server (browsing/ surffing).
+	-mobile, laptop, car, washing machine, TV, robo mopping......
+	-its a media/interface between server & end-user 
+end-user:
+---------
+	-who are working on/operating client device those are called as "end-user".
+www -web:
+---------
+	-1989/90 (Tim Berners-Lee father of web)
+	-Sir Tim Berners-Lee invented the "web" while at CERN, the European Physics Laboratory, in1989.
+	-He wrote the first web client and server in 1990.
+
+ 	-Tim=>Web, HTML, WWW, W3C Org, http 
+W3C Org:
+--------
+	The World Wide Web Consortium(W3C) develops standards and guidelines to help everyone build a web based on the principles of accessibility, internationalization, privacy and security.
+
+*********************************** HTML INTRODUCTION *********************************************
+	
+1.HTML was developed by Tim Berners-Lee in 1993-dec(HTML1.0)
+			GML => SGML => HTML(for web)  *** =>DHTML =>XML(for android) =>XHTML =>WML =>UML
+			90     91      93/94
+GML-generalized markup language
+SGML-standard generalized markup language
+HTML-hypertext markup language
+
+2.html is not a programing language, but it is a markup(structure of the program) language.
+3.Markup represents "tag" ,html is a tag oriented program.
+4.no case restrictions (we type program either in lower or upper or mixed case)
+5.Error free program , except while working url, address.
+6.cross platform compactable (write once run anywhere).
+7.no need to download & install any software
+       typing & saving =>notepad
+       execute & o/p =>browser
+8.html used to develop "static web page"
+9.execution is top to bottom order
+10.its interpreter oriented program
+=>interpreter used to translate the code from high level to machine code .
+it trans code line-line & executes code line-line
+				
+			step1 =>trans=>exe=>o/p
+			step2 =>trans=>X
+			step3
+11.browser is html translator & executor
+
+**********tags***********
+         ------
+-it is a predefine program, set of instruction(command) (and tags are part of the browser only)
+-these instruction/command are followed by browser, then produces outputs
+-its an English word, every tag must be enclosed  with in < >
+ 
+Two Types:
+	1.paired tags(60%)
+	 -pair means open tag & closing tag
+	 -Syn:  <tag>data</tag>
+	 -Ex:   <button>Login</button>
+		<p>...</p>
+		<h1>...</h1>
+		<table>...</table>
+		<audio>...</audio>
+	2.unpaired tags(40%)
+	 -unpair means only open tag
+	 -Syn:  <tag> or<tag/>
+	 -Ex:   <br/>
+		<hr/>
+		<img/>
+		<link/>
+		<meta/>
+	-these are also known as self closed tags
+	-also known as body less tags
+
+03:17 PM 17-06-2024
+	
+structure of HTML
+-----------------
+as per W3C Org we have to follow the following structure to design web pages(but it's not compulsory) .
+
+<!DOCTYPE html>
+
+<html lang="en"> ---------------webpage /document designing starts here
+ <head>
+  .......
+ </head>
+ <body>
+    welcome to the web world !
+ </body>
+
+</html>-----------------------web page /document designing ends here 
+
+generally , html program contains three parts, those are:
+
+ >versioning section
+	
+ >head section
+ >body section
+>versioning section
+ this is providing information to the browser which version we are using  in the web page/program. So, browser is interpretation code and producing output as per given specification.
+
+Syn:   <!DOCTYPE html version-url>
+
+	Documentation type -library 
+HTML 4.0:
+ 
+<!DOCTYPE html public"-//W3C//DTD HTML 4.0//EN"
+"http://www.w3c.org/TR/html4/strict.dtd">
+
+<!DOCTYPE html>  ------------------use current version of HTML
+current version is html 5.0
+
+>Head Section:
+	-it contains web page settings code & configuration code 
+	-these 6 tags are available for the head section
+	Ex: title, link ,base, style, script, meta tags
+>Body Section:
+	-it contains web page designing code
+	Ex:h1,p,table,button, input, a, img, br, ol, ul etc...
+
+comments in html
+	-comment lines are to provide some description about our program.
+	-comments are not executed by browser.
+        Syn:
+	 <!--comments -->
+https://bit.ly/j37dn24batch
+
+02:09 PM 18-06-2024
+-------------------
+heading tags:
+	These tags are used to print data/text in heading format.
+	html provides 6 heading tags, those are h1, h2, h3, h4, h5, h6.
+	These 6 tags are used to display headings in different sizes.
+	six tags are paired tags and block level elements.
+     Ex:<h1>Hypertext Markup Language</h1>
+	<h2>Hypertext Markup Language</h2>
+	<h3>Hypertext Markup Language</h3>
+	<h4>Hypertext Markup Language</h4>
+	<h5>Hypertext Markup Language</h5>
+	<h6>Hypertext Markup Language</h6>
+	<h7>Hypertext Markup Language</h7>
+p tags:
+>p stands for paragraph.
+>this tags is used to display/ print more lines of text(paragraph)
+>its paired tag and block level.
+    <p> data </p>
+03:08 PM 19-06-2024
+
+
+100$<br>
+100&euro;
+100&pound;
+100&yen;
+100&#8377;
+&frac12;
+&nbsp;<br>
+Intel&copy; Core&reg; 19&trade; Processor<br>
+&lt;Siva&gt;<br>
+
+&#128511;&#128577;&#128501;&#1285;&#128575;&#128587;&#128552;&#128556;&#128512;&#128569;&#128599;
+
+formatting tags:
+---------------
+these tags are used to print the data in different styles(presentational).
+
+strong tag: used to print the data in bold format.
+	   <strong> data </strong>  -----html4
+	   <b> data </b>-----------------html1
+
+non-semantic                                semantic
+-old tag                                   -new tags
+-not communicate with browser              -communicate with browser
+-not clear and difficult to understand     -clear and easy to understand
+
+<a></a>, <b></b><th>                       <details>,<strong><summary>
+
+03:08 PM 20-06-2024
+
+inset tag: used to represents inserted text or used to print the data with underline.
+        <ins> text</ins>
+	<u> text</u>
+delete tag: used to represent deleted text or used to print the data with strike out.
+	<del>text </del>
+	<s> text <s>
+em tag: used to print the text with italic format
+	<em> text</em>
+	<i>text</i>
+sub tag: used to represent the sub script, used to print the text below the base line 
+	<sub> text </sub>
+sup tag: used to represent the super script, used to print the text above the base line 
+	<sup> text </sup>
+span tag: used to print the data with our any format 
+	<span> text </span>
+--------------> 11 tags are paired & inline tags
+
+pre tag: preformatted text,
+	<pre> text </pre>
+ 	->paired & block level
+
+inline :-inline takes that size on content size
+	-support size customization(doubt)
+	-alignment not supported
+
+block :- block takes the hole line.
+	-not support size customization.
+	-alignment supported.
+-------->image is a inline tag but it support height and width
+--->nesting of tags is supported by html
+--->body inside 
+title tag:
+this tag used to set the title for a webpage, means every webpage they have individual title.
+	Web site =>10 web pages =>10 titles(1 page:1 title)
+its paired tag
+<title> is the sub tag of <head> tag.
+syn:
+	<title>text </title>
+Link tag:
+-Link tag used to set the favicon/logo for webpage.
+-also 
+used to link with external files(css files, bootstrap file)
+-Unpaired tag.
+-<link> is the sub tag of <head> tag.
+syn :<link rel= "icon" href="filename"/>
+
+	rel-Relative-> icon or stylesheet
+	href-Hyper reference-> address of image
+.jpg .bmp .png .jfif .gif .tif .ico .webp .svg
+
+
+Attributes :
+------------
+- Attributes is a special features/setting of a tag.
+-Every tag they have attributes 99%.
+-using attributes we can change color, change the size, alignment, change displaying style, change functionality , we can additional info to browser, we can restrict user, we can set data limits, we can execute JavaScript code etc...
+-Syn:  
+	<tag attribute="value" attribute="value"...>
+
+Notes:
+	1.Attributes must be right side of tag name
+	2.Every attribute should follow space
+	3.value should be enclosed with in "" or '' or w/o quotes
+	4.you can use any number of attributes
+
+Types :
+	1.General/global attribute (these related to all tags)
+	2.Specific attribute (these related to some/few tags)
+      //3.Optional attribute ( these are optional to use)
+
+	4.Event attribute ( to run js code ): which attributes support to execute js is called event attribute (event ahndling) Ex: ondblclick, onload, onerror, onchange, oninput, onsubmit, onmouseover,onmouseout, oncopy, onpaste, oncut.....
+
+Images:
+-------
+>"img" tag is used to display images on webpage.
+>in one web pages we can display any no of images and any type of images.
+
+	.jfif .svg .jpg .bmp .gif .tif .png .webp
+>its un-paired tag, and its inline element
+syn:
+	<img attributes/>    6 attributs supported by img tag
+>width, height are global tags
+>src, alt, title, border are specific tags
+d:/html12pm/first.html-absolute path
+first.html-relative path
+
+Hyperlinks:
+-----------
+>a tag stand for "anchor".
+>"a" tag is used to create hyperlink, hyperlinks are used to move from one webpage to another webpage.
+>whenever user click on the hyperlink, it moves to the specified page.
+>Destination page sometime within same application or other application.
+>by default , every browser provides built-in style for each hyperlink,
+	i.e blue color +hand symbol +underline .
+>its paired tag and inline element
+ Syn:
+	<a attributes>Display Text</a>
+	<a attributes><img></a>
+>two type of links
+	>internal links
+	>external links
+03:25 PM 26-06-2024
+installing notepad ++
+List tags:
+---------
+there is two types of list tags these are 
+    1.ol(ordered list)
+	2.ul(unordered list)
+ol:(ordered List)
+>ordered list, used to allotting slno for pointes
+  1,2,3.... A,B,C....a,b,c.... I,II,III... i,ii,iii.......
+>ol is parent tag of li tag 
+>li(list item) used to print data points wise
+>syn:
+    <ol>
+		<li>data<li>
+		<li>data<li>
+        .....
+    <ol>
+>it takes type="a" -->a,A,i,I,1
+>attributes type="I", reversed, star=""
+un:
+---
+it supports (by default)disk/dot,square,circle.
+>ol inside ul we can use and ul inside ol can be used
+
+fieldset:
+>parent tag
+>used to draw a common border for group of element 
+
+legend:
+>child tag
+>used to set title for the fieldset
+Syn:    <fieldset>
+			<legend>text</legend>
+			elements
+		</fieldset>
+>both tags are paired and blocklevel
+
+18.legend:
+-----------
+> child tag
+> used to set title for fieldset
+> syn:
+         <fieldset>
+		<legend> text </legend>
+		elements
+	</fieldset>
+> both are paired and block level tags
+>align attribute move the content inside tag
+>margin move the tag on web page
+
+
+
+19.Division Tags:
+---------------
+> div is container, means its grouping elements of html.
+> mostly used tag
+> for better maintained, effective design of web page and simplifying code.
+> div tag is used to divide web page as no. of subpages/parts, each part is represent as div.
+> its paired tag, and block level element
+> it follows box style or card style
+
+syn:
+	 <div attributes> 
+             contents(group of elements or tags) 
+         </ div>	
+
+
+
+20.Table:
+------------
+>used to draw table, means it grouping no. of rows
+> caption: to set main heading of table
+> tr: table row, used to draw a row, means it grouping no. of columns
+> th: table heading , used to set column headings
+> td: table data, used to print the data in columns
+
+Since html4:
+	thead => table head section
+	tbody => table body section 
+	tfoot => table footer section
+
+> these only for identification/show boundary
+> they are not print anything
+> all these 8 tags are paired
+> table, tr, caption, thead, tbody, tfoot are block level
+> th, td are inline
+
+21.colspan & rowspan:
+--------------------
+>if same data repeated again and again then use colspan for columns and rowspan for rows
+>1st we have to delete the repeated data only 1st time data is enough.
+
+
+
+
+
+
