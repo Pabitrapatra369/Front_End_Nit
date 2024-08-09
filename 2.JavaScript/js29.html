@@ -1,0 +1,39 @@
+<!--finding  the grade of student-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Grade of students</title>
+    <link rel="stylesheet" href="grade.css" />
+  </head>
+  <body>
+    <div id="main" align="center">
+      <div id="input" align="end">
+        <p align="center">Mark Report</p>
+        <label for="roll no">Roll No</label>
+        <input type="text" placeholder="roll no" />
+        <br />
+        <label for="roll no">name</label>
+        <input type="text" placeholder="Name" />
+        <p align="center">Marks</p>
+        <label for="roll no">HTML</label>
+        <input type="text" placeholder="HTML" id="html" /><br />
+        <label for="roll no">CSS</label>
+        <input type="text" placeholder="CSS" id="css" /><br />
+        <label for="roll no">JavaScript</label>
+        <input type="text" placeholder="JavaScript" id="js" /><br />
+        <label for="roll no">BootStrap</label>
+        <input type="text" placeholder="BootStrap" id="bs" />
+        <div id="btn">
+          <button onclick="getResult();">Get Result</button>
+        </div>
+      </div>
+      <div id="op">
+        <output id="total"></output>
+        <output id="average"></output>
+        <output id="grade"></output>
+      </div>
+    </div>
+    <script src="grade.js"></script>
+  </body>
+</html>
