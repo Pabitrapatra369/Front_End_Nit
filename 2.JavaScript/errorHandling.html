@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="">First number</label><br />
+    <input type="text" id="first" /> <br />
+    <label for="">Second number</label><br />
+    <input type="text" id="second" /><br />
+    <button onclick="division()">Division</button>
+    <br />
+    <output id="op"></output>
+    <script>
+      function division() {
+        let x, y, res;
+        try {
+          x = eva(first.value); //eval = evaluate this is like parsing
+          y = eval(second.value);
+          res = x / y;
+          op.value = "Division val " + res;
+        } catch (err) {
+          op.value = "enter numbers only";
+          console.log(err.name);
+        }
+      }
+    </script>
+  </body>
+</html>

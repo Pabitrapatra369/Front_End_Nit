@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>demo on setInterval & setTimeout</h3>
+    <h2 align="center">Digital Clock</h2>
+    <div style="display: flex; justify-content: space-around">
+      <h1 id="d">Date</h1>
+      <h1 id="t">Time</h1>
+    </div>
+    <script>
+      /* Demostratoin on these two
+       window.setTimeout(function () {
+        alert("msg from timeout");
+      }, "4000");  
+      window.setInterval(function () {
+        document.write("msg from setInterval<br>");
+      }, "5000"); */
+      //Digital clock
+
+      d.innerHTML = new Date().toLocaleDateString();
+
+      setInterval(function () {
+        t.innerHTML = new Date().toLocaleTimeString();
+      }, "1000");
+    </script>
+  </body>
+</html>

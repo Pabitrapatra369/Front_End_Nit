@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>array 2</title>
+	</head>
+	<body>
+		<h3>demo on array constructor</h3>
+		<script>
+		//array declaration
+			let a=new Array();  //array object is created and stores the default value and stores the reference in the a variable
+			document.write(`size ${a.length}<br>`);
+			document.write(`array ${a}<br>`);
+			a[0]=10;
+			a[1]=20;
+			a[2]=30;
+			a[5]=40;//jumping pussible in assigning time not in initialization time
+			document.write(`size ${a.length}<br>`);
+			document.write(`array ${a}<br>`);
+			
+			
+		//array initialization
+		let name=new Array('rama','sama','gama','bhama');    //b[0]=10 value of the array not size
+		document.write(`size ${name.length}<br>`);
+		document.write(`name      :    ${name}<br>`);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Js 31</title>
+	</head>
+	<body>
+		<h3>demo on interpolaiton</h3>
+		
+		<script>
+			let n='ram';
+			document.write(n+"<br>");
+			document.write(`${n}<br>`);
+			document.write(`sum is ${10+20}<br>`);
+			document.write(`product is ${10*20}<br>`);
+			
+			let tn=10;
+			for(let i=1;i<=10;i++) 	document.write(` ${tn} *${i} =${tn*i}<br>`);
+			
+			let st=`Hi ${n}`;
+			document.write(st+`<br>`);
+				
+			let x=15,y=9,res;
+			res=`sum is ${x+y}<br>
+				sub is ${x-y}<br>
+				prod is ${x*y}<br>
+				div is ${x/y}<br>`;
+			document.write(res);
+		</script>
+	</body>
+</html>
