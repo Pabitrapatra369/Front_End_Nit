@@ -411,6 +411,15 @@ accessing array:
 		array.length=N;   =>it reset size of array
 
 
+>use const for always diclaring non primitive datatype suggestes 
+
+Home work
+---------
+1.unique number  or nut
+2.print factors of n
+3.check strong number or not
+4.
+
 Error Handling in JavaScript
 ----------------------------
 > JavaScript supports the following list of error

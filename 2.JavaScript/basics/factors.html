@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>factors</title>
+  </head>
+  <body>
+    <label for="getting number">Enter a number</label><br />
+    <input type="text" id="nvalue" /><br />
+    <button onclick="factors()">get the factors</button> <br />
+    <output id="out"></output>
+    <script>
+      function factors() {
+        let n = nvalue.value;
+        let a = [],
+          c = 0;
+
+        for (let j = 1; j < n; j++) {
+          if (n % j === 0) a[c] = j;
+          c++;
+        }
+        out.value = "the factors are " + a.join(" ");
+      }
+    </script>
+  </body>
+</html>

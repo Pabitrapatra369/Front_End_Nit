@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>array 2</title>
+	</head>
+	<body>
+		<script>
+		//storing diff type of eles
+		let person =['siva',43,true,5.10,new Date()]
+		document.write(`data :${person}<br>`);
+		
+		//constant array
+		const a=[10,20,30]		//const reccomended
+		document.write(`A ${a}<br>`);
+		a[3]=90;
+		document.write(`A ${a}<br>`);
+		
+		//a=[11,22,33];			//error assinging to same variable
+		
+		//dynamic array
+		const b=[11,22,33,44,55,66,77,88,99];
+		document.write(`B ${b}<br>`);
+		b.length=5; //reduce
+		document.write(`B ${b}<br>`);
+		b.length=7; //increas
+		document.write(`B ${b}<br>`);
+		b[5]=101;
+		b[6]=202;
+		document.write(`B ${b}<br>`);
+		b.length=0; //destroing of array
+		</script>
+	</body>
+</html>

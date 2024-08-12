@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>array 2</title>
+	</head>
+	<body>
+		<h3>finding max & min element of array</h3>
+		<script>
+			const eles=[];
+			let n=+prompt("Enter no.of elements");
+			for(let i=0;i<n;i++)eles[i]=+prompt(`enter a(${i+1}) value`);
+			
+			let max=eles[0]; //assume
+			let min=eles[0]; //assume
+			
+			for(let i=1;i<n;i++){
+				if(eles[i]<min)min=eles[i];
+				if(eles[i]>max)max=eles[i];
+				}
+			document.write(`Eles ${eles}<br>`);
+			document.write(`Max ${max}<br>`);
+			document.write(`Min ${min}<br>`);
+			
+		
+		</script>
+	</body>
+</html>
