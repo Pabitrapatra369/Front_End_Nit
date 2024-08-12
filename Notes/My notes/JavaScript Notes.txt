@@ -340,15 +340,160 @@ if/else/for/while/do/addition
 	if => true block
 	else =>false block
 	
-	if is decision making
-	switch is selection
+>if is decision making
+>switch is selection
+>switch support all the  datatype. switch(day){}
+>case can be variable also in javaScript.
 
+Loops
+------
+-while loop (top testing/entry level)
+-for loop 
+-do-while (bottom testing /exit level )
+	Initval - where the loop start/begins	i=1
+	Condition - where the loop ends			i<=10
+	Stepping - loop updater					i++
 	
+Unconditional statements
+------------------------
+>if condition is cumpulsory
+break;		stops the whole code (loops,switch )
+continue;	stops the current iteration (loops )
+return;		return  from whole code 
 	
+String interpolation
+--------------------
+>string interpolation replaces the expressions in the string with actual values of the specified variables.
+>substritute dynamically var/expr/fun-call in between strings
+>operator is ${}
+>string should be enclosed with in "backtick"(``),but not"" and''.
+syn: ${var}		${expr}		${fun call}
+	`text${var}text	${expr}text	${fun call}...`
 	
+use:while printing data & assigning values to variable.
 	
+Arrays
+--------
+>array is collecection of elements (values).
+>storing group of value with  same refname is called array.
+>array allows similar type of values (homogeneous ) as well as different types of  values, means one array can store group number , strings, booleans etc ....
+>we can create arrays in local scope or outer scope.
+>arrays are belongs to reference/non-primitive datatype.
+>arrays are created dynamically, and arrays are created in heap area.
+>arrays maintance data in sequence order
+
+adv:
+-----
+>arrays are simplyfying coding when work with group of values.
+>easy transporting data.
+>also used for data maintenance in applications.
+
+array creation:
+---------------
+Approach 1:
+	using array Literals[ ]
+	syn:	let/var/const array=[];											//declaration
+			let/var/const array=[val1,val2,val3......];						//initialization
+			
+Approach 2:
+	using new keyword & constructor
+	syn:	var/let/const array= new Array();								//declaration
+			var/let/const array=new Array(val1,val2,val3...);				//initialization
+			
+			
+accessing array:
+	array[index]
+		index is a slno of  memory block, its start 0.
+	set value:
+		array[index]=value;
+	size of array:
+		array.length =>predefined property, its returns size of array
+		array.length=N;   =>it reset size of array
+
+
+Error Handling in JavaScript
+----------------------------
+> JavaScript supports the following list of error
+	syntax error
+	runtime error
+	logical error
+
+Exception handling in javaScript
+--------------------------------
+to work with error/exception use try,catch, finally, throw keywords.
+>try, catch and finally are blocks.
+>throw statement.
+
+>Try..catch statement:This statement allows you to test a block of codefor errors.The try block contains the code to be run & the catch blockcontains the code to be executed if an error occurs.
+
+Syntax:
+	try{
+		code to run[break;]
+	    }
+	catch(ob){
+		code to run if an exception occurs[break;]
+		}
+	finally{
+		statements
+		}
+		
+try-catch
+try-finally
+try-catch-finally these combinations are only possible
+
+#List of Error:
+--------------
+Error name		Description
+EvalError		An error has occurred in the eval() function(old var)->
+RangeError		A number "out of range" has occurred
+ReferenceError	An illegal reference has occurred
+SyntaxError		A syntax error has occurred <-
+TypeError		A type error has occurred
+URIError		An error in encodeURI("uri") has occurred
+
+
+Throw statement:
+----------------
+This statement allows to you create an exception .if you use this statement together with try catch statement, you can control program low and generate accurate error message. The 
+>it is the custome error handling
+Syn:		throw excep-obj;
+			throw "text";
+			
+			
+Timer Functions
+---------------
+setTimeout()
+	callback,timer,it exe task, only once after n mi.sec
+	var=window.setTimeout(task,"interval")
+setInterval()
+	callback,timer,it exe task, repeatedly for every n mi.sec
+	var=window.setInterval(task,"interval")
+clearTimeout()
+	it stops/clears the timeout function
+	var=window.clearTimeout(t-index)
+clearInerval()
+	it stops/clears the interval
+	var=window.clearInerval(t-index)
 	
+print()
+	This method display print dialog box, which is used to print the current webpage/document through selected printer.
 	
+	most of browser before printing page, they shows "Print preview" 
+	Syn:	window.print()
+
+
+Deployment
+-----------
+>netlify
+>w3 spaces
+>early packages
+
+
+			
+			
+			
+			
+
    
 
 
