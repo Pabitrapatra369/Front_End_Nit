@@ -415,10 +415,13 @@ accessing array:
 
 Home work
 ---------
-1.unique number  or nut
+1.unique number  or not
 2.print factors of n
 3.check strong number or not
-4.
+
+Nested Array:
+--------------
+
 
 Error Handling in JavaScript
 ----------------------------

@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>array 2</title>
+	</head>
+	<body>
+		<h3>finding max & min element of array</h3>
+		<script>
+			const a1=[10,20,30];
+			const a2=[11,22,33,44];
+			const a=[a1,a2]
+			
+			document.write(`${a}<br>`);
+			document.write(`${a.length}<br>`);
+			document.write(`${a[0].length}<br>`);
+			document.write(`${a[1].length}<br>`);
+			
+			for(let i=0;i<a.length;i++){
+			 for(let j=0;j<a[i].length;j++){
+				document.write(`${a[i][j]} `);
+				}
+				document.write("<br>");
+			}
+			
+			console.table(a);
+		</script>
+	</body>
+</html>
