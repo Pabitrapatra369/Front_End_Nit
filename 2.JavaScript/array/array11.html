@@ -1,0 +1,29 @@
+<!-- example on JS arrays -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Arrays</title>
+  </head>
+  <body>
+    <h3>demo on spread operator</h3>
+    <script>
+      const a = [10, 20, 30, 40, 50];
+	  
+	  //coping
+	  /*let b=[];
+	  b=a;	//array not copied,ref only copid*/
+	  
+	  let b=[...a];  //array copid
+	  document.write(`A ${a} <br>`);
+	  document.write(`B ${b} <br>`);
+	  
+	  //merging
+	  let ft=['html','css','js','bs'];
+	  let bt=['servlet','pht','django','asp.net'];
+	  let db=['oracle','mongodb','sqlserver'];
+	  
+	  let web=[...ft,...bt,...db];
+	  document.write(`web ${web} <br>`);
+    </script>
+  </body>
+</html>

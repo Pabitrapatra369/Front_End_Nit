@@ -500,9 +500,37 @@ Deployment
 >w3 spaces
 >early packages
 
+For in loop:
+------------
 
-			
-			
+for(temp-var in array/coll){ //fetching index 1 by 1
+	steps a[temp-var];
+	
+	}
+>we can use array with in for in loop.
+>for in loop supports to manipulate array.
+>its index based loop.
+
+for of loop:
+------------
+	for(temp-var of array/coll){  //fetching elements 1 by 1
+	steps temp-var;
+	}
+>we can't use array with in for of loop.
+>for of loop not supports to manipulate array.
+>its value based loop.
+spread operator
+---------------
+>"..." is unary operator, we should use this operator as prefix.
+>Its rest and spread operator.
+>the spread /rest operator represents all remaining values/so on values.
+>this we can use in methods and arrays.
+	syn:	...array  <-spread
+			...collection <-spread
+>merging and coping
+
+
+# merging and delete the duplicate elements in array
 			
 			
 

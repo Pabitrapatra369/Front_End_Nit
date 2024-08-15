@@ -5,51 +5,60 @@
     <title>Arrays</title>
   </head>
   <body>
-	<h3>demo on array methods</h3>
-	<script>
-	  const eles=[10,20,30,40,50,30,60,70,80,30,90,30];
-	  let str="green apples";
-	  document.write(`Eles	${eles}<br>`);
-	  document.write(`Str	${str}<br>`);
-	  
-	  //includes() => searching, true, false
-	  document.write(`30 found	${eles.includes(30)}<br>`)
-	  document.write(`55 found	${eles.includes(55)}<br>`)
-	  document.write(`${str.includes("app")}<br>`)	  
-	  document.write(`${str.includes("end")}<br>`)	  
-	  
-	  //Anonymous
-	  document.write(`${[11,22,33].includes(22)}<br>`);
-	  document.write(`${"rama".includes("ra")}<br>`);
-	  
-	  //indexOf() => searching, index, -1, 1st occure
-	  document.write(`30@ ${eles.indexOf(30)}<br>`);
-	  document.write(`66@ ${eles.indexOf(66)}<br>`);
-	  document.write(`30@ ${eles.indexOf(30,6)}<br>`);
-	  
-	  document.write(`${str.indexOf("e")}<br>`);
-	  
-	  //lastIndexOf()  
-	  document.write(`30@ last	${eles.lastIndexOf(30)}<br>`);
-	  document.write(`${str.lastIndexOf("e")}<br>`);
-	  
-	  document.write(`30@ 2 => ${eles.indexOf(30, eles.indexOf(30)+1)}<br>`);
-	  
-	  //reverse()
-	  eles.reverse();
-	  document.write(`reversed eles => ${eles}<br>`);
-	  
-	  //sort()  asc, alpha order	
-	  eles.sort();
-	  document.write(`sorted eles => ${eles}<br>`);
-	  
-	  const names=['rama','ramana','ramarao','Ramakrishna','raman','Ramanujan'];
-	  document.write(`names => ${names}<br>`);	  
-	  names.sort();
-	  document.write(`sorted names => ${names}<br>`);	  	  
-	  //join()	
-	  document.write(`${eles.join(" &nbsp; ")}<br>`);
-	  document.write(`${names.join("&#128556;")}<br>`);	
-	</script>  
+    <h3>demo on array methods</h3>
+    <script>
+      const eles = [10, 20, 30, 40, 50, 30, 60, 70, 80, 30, 90, 30];
+      let str = "green apples";
+      document.write(`Eles =	${eles}<br>`);
+      document.write(`Str =	${str}<br>`);
+
+      //includes() => searching, true, false
+      document.write(`30 found	${eles.includes(30)}<br>`);
+      document.write(`55 found	${eles.includes(55)}<br>`);
+      document.write(`app found ${str.includes("app")}<br>`);
+      document.write(`end found ${str.includes("end")}<br>`);
+
+      //Anonymous
+      document.write(
+        `[11, 22, 33] includes 22${[11, 22, 33].includes(22)}<br>`
+      );
+      document.write(` rama includes ra ${"rama".includes("ra")}<br>`);
+
+      //indexOf() => searching, index, -1, 1st occure
+      document.write(`30 found @ ${eles.indexOf(30)}<br>`); //2
+      document.write(`66 found @ ${eles.indexOf(66)}<br>`); //-1
+      document.write(`30 found @ ${eles.indexOf(30, 6)}<br>`); //9
+      document.write(`${str.indexOf("e")}<br>`); //2
+
+      //lastIndexOf()
+      document.write(`30 last position @ last	${eles.lastIndexOf(30)}<br>`); //11
+      document.write(`e last position ${str.lastIndexOf("e")}<br>`); //10
+      document.write(
+        `30 second last @ 2 => ${eles.indexOf(30, eles.indexOf(30) + 1)}<br>`
+      );
+
+      //reverse()
+      eles.reverse();
+      document.write(`reversed eles => ${eles}<br>`);
+
+      //sort()  asc, alpha order
+      eles.sort();
+      document.write(`sorted eles => ${eles}<br>`);
+
+      const names = [
+        "rama",
+        "ramana",
+        "ramarao",
+        "Ramakrishna",
+        "raman",
+        "Ramanujan",
+      ];
+      document.write(`names => ${names}<br>`);
+      names.sort();
+      document.write(`sorted names => ${names}<br>`);
+      //join()
+      document.write(`${eles.join(" &nbsp; ")}<br>`);
+      document.write(`${names.join("&#128556;")}<br>`);
+    </script>
   </body>
 </html>

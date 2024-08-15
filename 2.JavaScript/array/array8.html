@@ -1,0 +1,28 @@
+<!-- example on JS arrays -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Arrays</title>
+  </head>
+  <body>
+    <h3>demo on array manipulation</h3>
+    <script>
+      const eles = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+      document.write(`eles ${eles}<br>`);
+      
+	  // deletion	 splice(start-index ,count)
+	  let temp=eles.splice(2,2);
+	  document.write(`afeter delete ${eles}<br>`);
+	  document.write(`deleted data ${temp}<br>`);
+	  
+	  //updation	splice(st-index,count,new eles)
+		//[10,20,50,60,70,80,90]
+		eles.splice(3,2,101,202);
+	    document.write(`update ${eles}<br>`);
+	  //insertion	splice(st-index,0,new eles)
+		//[10,20,50,101,202,80,90]
+		eles.splice(5,0,103,204);
+	    document.write(`insert ${eles}<br>`);
+    </script>
+  </body>
+</html>
