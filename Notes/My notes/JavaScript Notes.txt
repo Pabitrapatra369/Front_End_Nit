@@ -421,6 +421,12 @@ Home work
 
 Nested Array:
 --------------
+	Arrays inside a array is called nested array.
+const a1=[10,20,30];
+const a2=[11,22,33];
+		cosnt a=[a1,a2];
+	
+document.write(`${a}<br>`);
 
 
 Error Handling in JavaScript
