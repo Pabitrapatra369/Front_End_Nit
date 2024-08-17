@@ -537,10 +537,65 @@ spread operator
 
 
 # merging and delete the duplicate elements in array
+
+push:
+-----
+->it adds  elements into the last fo the array.
 			
-			
+			eles.push(e);
+			eles.focus();
+function addElement(){
+		let e=+tb.value;
+		eles.push(e);
+		tb.value="";
+		tb.focus();
+		}
+functions in JavaScript:
+-----------------------
+>quite often we need to perform a similar action in many places of the script.
+>for example, we need to show a message  when a visitor logs in , logs out and maybe somewhere else.
+>Functions are the main "building blocks" of the program. We've already seen examples of built-in functions,like alert(message),prompt(message,default) and confirm (question).
+But we can create functions of our own as well.
+	>function is named block; it consists group of statements
+	>function is used to perform specific task/operation
+Adv:
+----
+>Reusable means they allow the code to be called many times without repetition.
+>reduce length of code.
+>Easy maintenance code (readability, easy debugging and modification of code...)
+
+>2 types 
+	predefined
+	userdefined
+>Types of functions:
+--------------------
+	1.Named funs			2.Expressional Funs
+	3.Arrow funs			4.IE funs/II funs(Imediate Execution /imedeate invoke funs)
+We can develop functions either internal or external
+		Internal =>within the script tag
+		External =>in sep js file, but no script tag(any no of funs)
+1.Named Functions:
+------------------
+by using "function" keyword we can define /develop function.
+syn:
+	function fun-name(parameters)  //function prototype
+	{
+	local declaration
+	statements						//body
+	return value;
+	}
+Where to call a function?
+we can call a function , from diff places, those are 
+	>frome script tag
+	>from another function
+	>event attribute
+How to calling:
+	fun-name()
+	fun-name(arg1,arg2....)
 
    
+Paremeter: we can pass arbitrary data to functions using parameters (also called function arguments).
+A function can return a value back into the calling code as the result.
 
 
 

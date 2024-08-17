@@ -1,0 +1,29 @@
+<!-- example on JS arrays -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Arrays</title>
+  </head>
+  <body>
+    <h3>demo on array distructure</h3>
+    <script>
+      const a = [10, 20, 30, 40, 50];
+	  //let x=a[0],y=a[1],z=a[2];  this is a long proccess
+	  
+	  let [x,y,z]=a;    //destrureing
+	  document.write(`x ${x} <br> y ${y} <br> z ${z} <br>`);
+	 
+	 const eles=['html','css','Js','bs','ajax','jquery','angular','react','node'];
+	 
+	 let [i,,j,k,...e]=eles;	//destrureing with spread & skip
+	 document.write(`i ${i} <br> j ${j} <br> k ${k} <br>`);
+	  document.write(`e array values= ${e} <br>`);
+	  
+	  //swaping using distructuring
+	  let v1=100,v2=200;
+	  document.write(`v1 ${v1} <br> v2 ${v2} <br>  <br>`);
+	  [v2,v1]=[v1,v2];    //swapping
+	  document.write(`v1 ${v1} <br> v2 ${v2} <br> `);
+    </script>
+  </body>
+</html>

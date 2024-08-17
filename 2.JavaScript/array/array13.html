@@ -1,0 +1,32 @@
+<!-- example on JS arrays -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Arrays</title>
+  </head>
+  <body>
+    <h3>demo on array </h3>
+	
+	<input type="text" id="tb" placeholder="enter any number">
+	<br>
+	<button onclick="addElement()">Add Element</button>&nbsp;
+	<button onclick="display()">View Element</button>
+	<br>
+	<p>Elements:</p>
+	<output id="op"></output>
+    <script>
+      const eles= [];
+	  function addElement(){
+		let e=+tb.value;
+		eles.push(e);
+		tb.value="";
+		tb.focus();
+		}
+		function display(){
+		op.value=eles;
+		}
+		
+	  
+    </script>
+  </body>
+</html>
