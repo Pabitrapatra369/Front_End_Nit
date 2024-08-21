@@ -597,6 +597,38 @@ How to calling:
 Paremeter: we can pass arbitrary data to functions using parameters (also called function arguments).
 A function can return a value back into the calling code as the result.
 
+syn: return var/value/expr;
+syn: fun-name(param,param,....)
+
+Note: while  declaring parameters don't use let,const and var keywords.
+	  A function or a method can return one value at a time.if needed to return more than one use array 
+	  we should use 10(0-9) parameters maximum(suggested) if needed we can use array parameters like printf(), scanf() using array parameters
+	  
+# parameters are used to pass the data  from anywhere to anywhere in the program	  
+
+expressional functions			Arrow functions
+----------------------			----------------
+functions(params){				(params)=>{
+	body							body
+	}							}
+
+1.these are reference datatype
+2.anonymos functions
+3.these direct calling is not possible
+4.using reference variable we can call
+5.used in callback funs
+		fun1 (code ,function(){})
+		fun1 (code ,()=>{})
+		writing a new function inside of other functions parameter is called callback function.
+		use->extending functionality
+			 
+forEach()   function
+----------------
+>js6 and not a loop, but extracting the elements one by one.
+>used for arrays and collection objects
+
+
+	  
 
 
 
