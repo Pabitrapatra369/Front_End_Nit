@@ -16,9 +16,35 @@
 		const eles=[10,6,300,20,9];
 		
 		eles.forEach(function(e){
-		document.write(`${e}<br>`);
+			document.write(`${e}&nbsp;`);
 		})
+		let s=0;
 		
+		eles.forEach(function(e){
+			s+=e;
+		})
+		document.write(`<br>sum of the array is=${s}<br>`);
+		//sorting in ascending order
+		document.write(`eles ${eles}<br>`);
+		eles.sort(function(i,j){
+			return i-j;
+			}
+		);
+		document.write(`eles ${eles}<br>`);
+		//sorting in descending order
+		document.write(`eles ${eles}<br>`);
+		eles.sort(function(i,j){
+			return j-i;
+			}
+		);
+		document.write(`eles ${eles}<br>`);
+		
+   </script>
+   <button id="bt">Click here</button>
+   <script>
+			bt.onclick=function(){
+							alert("button clicked");
+						}
    </script>
   </body>
 </html>

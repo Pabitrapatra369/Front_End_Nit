@@ -626,10 +626,60 @@ forEach()   function
 ----------------
 >js6 and not a loop, but extracting the elements one by one.
 >used for arrays and collection objects
+>it is a inbuilt function
+>data collecting forEach method and printing exper function
 
+ Arrow functions (since JS6)
+ ----------------------------
+1. No Parameter with 1step
+	Syn:		() => statement		    
+				refvar = () => statement
 
+2. No Parameter with no.of steps
+	Syn:		() => { statements }
+
+3. 1 Parameter with 1 step
+	Syn:		param => statement
+
+4. 1 Parameter with no.of steps
+	Syn:		param => {statements }
+
+5. No.of Parameter with 1step
+	Syn:		(params) => statement
+
+6. No.of Parameter with no.of steps
+	Syn:		(params) => { statements }
+
+Note: > without { } implicit return 
+		  > with { } explicit return
+		  > 1step no need { }
+		  > 1param no need ()
+
+calling:	    refvar		===> it displays AF code on webpage	
+				refvar()	    ===> it execute AF then displaying output	 
+
+Imediate invoking or execution function(IIF)
+---------------------------------------
+An IIFE (Immediately Invoked Function) is a function that runs the moment it is invoked or called in the JavaScript event loop. Having a function that behaves that way can be useful in certain situations. 
+Adv:     
+1. IIFE does not create unnecessary global variables and functions.
+2. Functions and variables created in IIFE do not conflict with other functions & variables even if they have the same name.
+3. Organize JavaScript code.   
 	  
+Rest operator
+---------------
+ example on functions with rest operator
+	function fun-name(...param1, param2, param3)  X
+	function fun-name(param1, ...param2, param3)  X
+	function fun-name(param1, param2, ...param3)	 valid
 
+	function fun-name(...param)
+	{
+		code     
+	}    
+
+		fun-name(val1, val2, val3 );
+ 
 
 
 

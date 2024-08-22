@@ -1,0 +1,35 @@
+<!-- IIF
+An IIFE (Immediately Invoked Function) is a function that runs the moment it is invoked or called in the JavaScript event loop. Having a function that behaves that way can be useful in certain situations. 
+Adv:     
+1. IIFE does not create unnecessary global variables and functions.
+2. Functions and variables created in IIFE do not conflict with other functions & variables even if they have the same name.
+3. Organize JavaScript code.     
+-->
+<!DOCTYPE html>  
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Functions</title>				
+  </head>
+  <body>
+	<h3>demo on Immediately Invoked Functions</h3>	
+	<script>
+		//IIF Expr
+		(function() {
+			document.write('hi, i am iif expr<br>');
+		})	();		
+
+		//IIF Arrow
+		(
+			()=>{ 
+				document.write('hi, i am iif arrow<br>'); 
+			}
+		)();
+
+		//IIF Expr
+		(function(a,b) {
+				document.write("sum is "+(a+b));
+		})	(11,22);
+	</script> 
+  </body>
+</html>
