@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <title>Functions</title>
+ </head>
+ <body>
+   <h2> Demo on shadow vars </h2>
+	<script>
+       var n=100;
+	   
+	   function myfun(){
+			let n=200;//shodow var
+			document.write(`n inside myfun  ${n}<br>`);
+			document.write(`n inside myfun by using window  ${window.n}<br>`);
+			document.write(`n inside myfun by using this  ${this.n}<br>`);
+			}
+		myfun();
+		document.write(`n outside   ${n}<br>`);	
+   </script>
+ </body>
+</html>				 
+
+
+
+
+
+

@@ -14,7 +14,18 @@
 <html lang="en">
  <head>
    <title>Functions</title>
-	<script src="sum.js"></script>
+	<script>
+	const total=function(...n){
+				let sum=0;
+				n.forEach( 
+					(e)=>{
+					if(typeof e==='number')
+					sum+=e;
+					}
+				);
+				return sum;
+			}
+	</script>
  </head>
  <body>
    <h2> Demo on rest parameter (since JS6) </h2>

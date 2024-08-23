@@ -677,9 +677,78 @@ Rest operator
 	{
 		code     
 	}    
-
 		fun-name(val1, val2, val3 );
+>minimum 0 and maximum no-range can taken by rest parameter.
+>a single parameter can take any no of parameter. 
+>in function only one rest-parameter we can use. more thant one is waste
+>function(x,y,...n) it is allowed, but (...n,x,y) and (x,...n,y)not alowed.
+
+ Shadow vars
+ ------------
+ >to access the global variable after create shadow var(i.e variable with same name)
+	#we can use:window.var-name
+	#we can use:this.var-name("this" is reference variable which carries address of current object.)
  
+ Object Oriented Programming in JavaScript
+ ------------------------------------------
+ We have two types of OOP  language:
+		1.class-based Object-Oriented Programming
+			ex:java,.net,python , cpp etc.
+		1.prototype-based(object based) Object-Oriented Programming
+			ex:javaScript, typescript, perl,php etc.
+			
+>Object represents a physical component.
+>Object is a real-time entity.
+		>we can see
+		>we can touch
+		>we can use
+	Ex:Para, button, heading textbox, div, table, li....
+
+>Object is an instance of  a class, nothing but memory block(one copy of class).
+>"object" is a predefine class; every class/ object should be derived from "object" prototype.
+>object is a collection of members:
+		1.properties (variable or fields)
+		2.methods (functions)
+	>Properties: details about the object. Properties are the variables which are stored inside the Object.
+	properties are used to store data about specific person, product or thing.
+			Ex: array.length=5
+	>Methods: to perform manipulation on the properties. Methods are the functions stored inside the  object. Methods read values from properties, write values into properties, to  perform logical operation.
+		Ex:array.sort() array.push() array.indexOf()
+		
+	Note: object are used to data maintenance
+	
+	Array			Object
+	Sequence		random
+	index base		properties(key)
+	[]				{}
+	const a=[]		const ob={}
+Example:
+	Car is an object				Person is an object:
+		-Properties					-properties
+			>car model:120				>name:siva
+			>car color:white			>age:50
+			>car no:5579				>gen:male
+		-Methods					-Methods
+			>
+			
+Object literals
+-----------------
+>object literals are represented as curly braces{}, which can include properties and methods
+>The property and  values are separated with : symbol
+>The method-name and body are separated with : symbol
+
+syn:		const refname={
+							"propertie":value,property:value,...,
+							methods
+						  }
+Note:
+Methods we can write in any of 3 froms,i.e like normal function or expression or arrow
+
+	How to access?
+		refname.property				<--to get value from object
+		refname.property=value			<--to assigning value to object
+		refname.method-name()			<--calling
+Note:
 
 
 
