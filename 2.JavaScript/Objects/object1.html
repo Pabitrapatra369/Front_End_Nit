@@ -1,0 +1,44 @@
+<!-- example on css properties -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	 <h2>demo on object literal</h2>
+	 <script>
+		//object creation
+		const ob={ };
+		document.write(`${ob}<br>`);//datatype Class
+		
+		const stud={//properties
+					slno:1,
+					name:'ram',
+					course:'html'
+		}
+		document.write(`${stud}<br>`);
+		document.write(`Slno ${stud.slno}<br>`);
+		document.write(`Name ${stud.name}<br>`);
+		document.write(`Course ${stud.course}<br>`);
+		
+		const emp={"id":11,"name":'sam',"job":'sse',"sal":65000};
+		
+		document.write(`${emp}<br>`);
+		document.write(`${emp.id} &nbsp; ${emp.name} &nbsp; ${emp.job} &nbsp; ${emp.sal} &nbsp;<br>`);
+		
+		
+		const im={src:'ex5.jpeg', width:200, height:150, title:'A'};
+		
+		document.write(`${im}<br>`);
+		let k=Object.keys(im);
+		let v=Object.values(im);
+		document.write(`${k}<br>${v}<br>`);
+		im.height=250;
+		im.width=300;
+		
+	 </script>
+</body>
+</html>
+

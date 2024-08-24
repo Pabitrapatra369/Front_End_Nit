@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <title>Objects</title>
+ </head>
+ <body>
+   <h2> Demo on object literal </h2>
+	<script>
+		//Object creation
+       const ob={}
+	   document.write(`${ob}<br>`);//object Object -first is datatype second one predefined class
+	   
+	   const student={//properties
+						slno:1,
+						name:'ram',
+						course:'html'
+					 }
+	   document.write(`${student}<br>`);
+	   document.write(` slno ${student.slno}<br>`);
+	   document.write(` name ${student.name}<br>`);
+	   document.write(` course ${student.course}<br>`);
+	   
+	   const emp={"id":11,"name":'sam',"job":'sse',"sal":65000}
+	   
+	   document.write(`${emp}<br>`);
+	   document.write(` id ${emp.id}<br>`);
+	   document.write(` name ${emp.name}<br>`);
+	   document.write(` job ${emp.job}<br>`);
+	   document.write(` salary ${emp.sal}<br>`);
+	   
+	   const im={src:'material/1.jpg',width:200,height:150,title:'A'}
+	   
+	   let k=Object.keys(im);
+	   let v=Object.values(im);
+	   
+	   document.write(`${k} <br> ${v} <br>`);
+	   
+	   
+	   
+
+   </script>
+ </body>
+</html>				 
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+<!-- example on css properties -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	 <h2>demo on object literal</h2>
+	 <script>
+		//object creation
+		const stud={//prperties
+				rno:11, name:'sam', total:360,
+				//methods
+				getResult:function()
+				{
+				  if(this.total>400)return "pass";
+				  else return "fail";
+				}
+				
+					
+				};
+				
+	document.write(`Rollno ${stud.rno}<br>`);
+	document.write(`Name ${stud.name}<br>`);
+	document.write(`total ${stud.total}<br>`);
+	document.write(`Result ${stud.getResult()}<br>`);
+	
+    stud.total=460;	
+	document.write(`total ${stud.total}<br>`);
+	document.write(`Result ${stud.getResult()}<br>`);
+	 </script>
+</body>
+</html>
+
