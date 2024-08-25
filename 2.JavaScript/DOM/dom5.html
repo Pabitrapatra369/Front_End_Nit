@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom4</title>
+  </head>
+  <body>
+    <h2>demo on element object attribut(setting manipulation)</h2>
+
+    <img src="material/1.jpg" alt="" id="i1" width="200" height="150" /><br />
+    <input
+      type="password"
+      onclick="document.querySelector('input').type='text'"
+    />
+
+    <hr />
+    <script>
+      //eleobj.attr         eleobj.getAttribut("attr")
+      //eleobj.attr=value   eleobj.setAttribut("attr",value)
+      //eleobj.attr=""      eleobj.removeAttribut("attr");
+      const image = document.querySelector("#i1");
+      document.write(
+        `${image.src} <Br>${image.getAttribute("width")} <Br>${
+          image.height
+        } <Br>`
+      );
+      //image.setAttribute("src", "material/3.jpg");
+      image.src = "material/3.jpg";
+      image.width = "200";
+      image.height = "200";
+      image.removeAttribute("height");
+      //image.removeAttribute("width");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>dom</title>
+    <style>
+      #i {
+        color: red;
+      }
+      .c {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>demo on doucment object methods</h2>
+
+    <h2 id="i">Apple</h2>
+    <span class="c">Orange</span>
+    <p class="c">Mango</p>
+    <div class="c">Banana</div>
+    <hr />
+    <script>
+      const ob1 = document.querySelector("#i");
+      document.write(`${ob1}<br>`);
+      ob1.style.color = "yellow";
+      let ob2 = document.querySelectorAll(".c");
+      document.write(`${ob2}<br>`);
+      ob2.forEach((e) => (e.style.backgroundColor = "green"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom6</title>
+  </head>
+  <body>
+    <h2>demo on element object (style manipulation)</h2>
+    <h1 style="background-color: yellow; color: blue">DOM styles</h1>
+    <p
+      onmouseover="document.querySelector('p').style.color='green'"
+      onmouseout="document.querySelector('p').style.color='black'"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ad ex hic
+      tenetur porro ratione consectetur reiciendis maiores, praesentium earum
+      iste in ipsum, facilis, suscipit explicabo soluta beatae molestiae
+      deleniti distinctio ipsam non veniam. Laboriosam vero eaque optio
+      expedita? Adipisci exercitationem assumenda, eveniet suscipit aut
+      obcaecati reiciendis aperiam inventore libero!
+    </p>
+    <hr />
+    <script>
+      const h1 = document.querySelector("h1");
+      document.write(`${h1.style.color}`);
+      h1.style.background = "green";
+    </script>
+  </body>
+</html>

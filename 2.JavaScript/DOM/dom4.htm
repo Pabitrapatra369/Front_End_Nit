@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom4</title>
+  </head>
+  <body>
+    <h2>demo on element object properties(data manipulation)</h2>
+    <h1 id="heading1">Hello</h1>
+    <input type="text" id="una" value="100" />
+    <hr />
+    <script>
+      //innerText innerHTML (paired tag data mani) value (input tag data mani)
+      const h1 = document.getElementById("heading1");
+      document.write(`${h1.innerText}`);
+      //h1.innerText = "hare krishna";
+      h1.innerText += " Radhe Radhe";
+      h1.innerHTML = "<ins style=''>Radhe Radhe</ins>";
+      const tb = document.getElementById("una");
+      document.write(`${tb.value}`);
+      //tb.value = "";
+      tb.value = "apple";
+      tb.value += " mango";
+    </script>
+  </body>
+</html>

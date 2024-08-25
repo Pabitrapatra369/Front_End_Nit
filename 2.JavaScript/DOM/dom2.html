@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>dom</title>
+  </head>
+  <body>
+    <h2>demo on doucment object methods</h2>
+    <h1 id="heading">Hello world</h1>
+    <input type="radio" name="color" id="input1" /> <label>red</label><br />
+    <input type="radio" name="color" id="input2" /> <label>green</label><br />
+    <input type="radio" name="color" id="input3" /> <label>blue</label><br />
+    <hr />
+    <script>
+      const ob1 = document.getElementById("heading");
+      document.write(`${ob1}<br>`);
+      const ob2 = document.getElementsByName("color");
+      document.write(`${ob2}<br>`);
+      const ob3 = document.getElementsByTagName("label");
+      document.write(`${ob3}<br>`);
+    </script>
+  </body>
+</html>

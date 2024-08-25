@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dom7</title>
+  </head>
+  <body>
+    <h1>demo on dom event handling</h1>
+    <button id="bt1">Push here</button>
+    <button id="bt2">pull here</button>
+
+    <script>
+      //1st App
+      const b1 = document.getElementById("bt1");
+      b1.addEventListener("click", function () {
+        alert("hey, you pushed me");
+      });
+      //2nd App
+      const b2 = document.getElementById("bt2");
+      b2.onclick = () => {
+        alert("hey, you pulling me");
+      };
+    </script>
+  </body>
+</html>

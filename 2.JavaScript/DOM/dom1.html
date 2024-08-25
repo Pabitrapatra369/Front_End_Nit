@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>krishna</title>
+  </head>
+  <body>
+    <h2>demo on doucment object properties</h2>
+    <img src="material/1.jpg" alt="" height="200" width="200" border="0" />
+    <img src="material/2.jpg" alt="" height="200" width="200" border="0" />
+    <hr />
+    <script>
+      document.write(`<br> ${document.title} <br>`);
+      document.title = `Hare krishna`;
+      document.write(`${document.URL}<br>`);
+      //   setTimeout(() => {
+      //     window.location.href = "https://www.google.com";
+      //   }, 3000);
+      const h = document.head;
+      document.write(`${h}<br>`);
+      const b = document.body;
+      document.write(`${b}<br>`);
+      const I = document.images; //I=document.images[1] for first element
+      document.write(`${I}<br>`);
+
+      const f = document.forms;
+      document.write(`${f}<br>`);
+
+      const hl = document.links;
+      document.write(`${hl}<br>`);
+    </script>
+  </body>
+</html>
