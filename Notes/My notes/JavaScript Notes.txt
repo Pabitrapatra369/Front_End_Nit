@@ -779,7 +779,20 @@ validations
 		=>own coding
 		=>reg exp
 
+		word	=> /ram/
+		/i		=> /ram/i		(ignore case)
+		/g		=> /ram/g		(global presence)
+		/w		=> /ram/w		(individual presence)
+		[ ]		=>multiple patterns
+		-		=>range
+		\d		=>digits
+		\s		=>symbol
+		*		=>multiple patterns
+		{count} =>{10}
+		{min,max}=>{3,15}
+		(?=.___)(?=.___)
 		
+		syn:	/^______$/
 		
 
 

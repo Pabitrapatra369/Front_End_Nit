@@ -1,0 +1,95 @@
+<!-- example on regular expressions with data validation -->
+<!DOCTYPE html>
+<html>
+ <head>  
+   <title>Registration Page</title>
+   <style>
+		span{
+		   color:#ff0000;
+		 }
+		button{	
+			background:linear-gradient( #33ff00, #ffff00); 
+			border:none; 
+			width:145px; 
+			height:25px;
+		}
+		button:hover{	
+			background:linear-gradient(#ffff00, #33ff00); 
+		}
+   </style>
+ </head>
+ <body>
+	<div>
+		<h2 id="head1"> <u>Registration Form</u> </h2>
+		<form id="f1" action="register.html" method="post">
+			<label>FullName</label> <br>
+			<input type="text" id="fullName"> <br> <span id="errfna"></span>
+			<br>
+			<label>Password</label> <br>
+			<input type="password" id="pword">  <span id="errpw"></span>
+			<br> 
+			<label>Email Id</label> <br>
+			<input type="email" id="mail" required>
+			<br>
+			<label>Mobile</label> <br>
+			<input type="text" id="phone"> <span id="errph"> </span>
+			<br>
+			<label>PinCode</label> <br>
+			<input type="text" id="pcode"> <span id="errpin"> </span>
+			<br>
+			<button type="submit" id="sb"> Submit </button>
+		  </form>
+		</div>
+	<script>
+
+    //document.getElementById("frm1").addEventListener("submit", checkData);		OR
+	document.forms[0].addEventListener("submit", checkData);
+
+    function checkData(frm) 
+	{
+      let fna=document.getElementById("fullName").value;
+      //checking name with reg-expr with only alphabets
+	  const nameexpr = /^[A-Za-z ]*$/; 
+	  if( nameexpr.test(fna)==false || fna==""){
+         frm.preventDefault();
+         document.getElementById("errfna").innerHTML="Plz enter a valid name";
+      }else{
+		  document.getElementById("errfna").innerHTML="";
+	  }
+
+     //digit only+ 10digits + start with 9/8/7/6 =====> valid 
+     //checking mobile number with reg-expr 
+      let phone=document.getElementById("phone").value;
+      const phexpr = /^[6789]\d{9}$/;    	
+	  if( phexpr.test(phone)==false){					
+         frm.preventDefault();
+         document.getElementById("errph").innerHTML="Enter Valid Mobile Number";
+      }else{
+		  document.getElementById("errph").innerHTML="";
+	  }
+
+      //checking pincode with reg-expr 
+      let pcode=document.getElementById("pcode").value;
+      const pinexpr=/^\d{6}$/;	
+	  if(pinexpr.test(pcode)==false){
+         frm.preventDefault();
+         document.getElementById("errpin").innerHTML=" Enter Valid Pincode";
+      }else{
+		  document.getElementById("errpin").innerHTML="";
+	  }
+ 
+		//PW should be  ==> 1 cap + 1 small + 1 digit +  _$@#   + min 8, max 25
+		//				(?=. )		*[A-Z]   *[a-z]	    *[0-9]	   *[_$@#]        {8,25}
+		//checking password with reg-expr 
+      let pwd=document.getElementById("pword").value;
+      const pwdexpr=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[_$@#]).{8,25}$/;
+	  if( pwdexpr.test(pwd)==false){
+         frm.preventDefault();
+         document.getElementById("errpw").innerHTML="Set a Valid Password";
+      }else{
+		  document.getElementById("errpw").innerHTML="";
+	  }
+    } //end of fun
+  </script>
+</body>
+</html>

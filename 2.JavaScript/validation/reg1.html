@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Regex1</title>
+  </head>
+  <body>
+    <input type="text" id="una" placeholder="Username" />
+    <button onclick="check()">Check Name</button>
+    <script>
+      function check() {
+        let un = document.querySelector("#una").value;
+        // const exp = new RegExp(/pabitra/);
+        const exp = /pabitra/i;
+        alert(exp.test(un));
+      }
+    </script>
+  </body>
+</html>

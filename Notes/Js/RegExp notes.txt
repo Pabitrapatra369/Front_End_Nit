@@ -1,0 +1,87 @@
+Regular expressions or regex are patterns used to match character combinations in strings.
+	  
+You can create a regex pattern using the `RegExp` constructor or by using regex literals enclosed in slash
+	Syn:
+			const refvar = new RegExp(pattern);
+			const refvar = /pattern/;
+				 
+			refvar.test( data ) => true, false
+
+validations
+	cross checking users given
+			=> own coding
+			=> reg exp
+
+		word	 => /ram/
+		/i		=> /ram/i
+		/g		=> /ram/g
+		/w		=> /ram/w	
+		[ ]	 	 => multiple patterns
+		-	=> range	a-f	
+		\d	=> digits
+		\s	=> symbol
+		*	=> no size limit
+		{count}	=> {10}
+		{min,max}	=> {3,15}
+		(?=.____)
+
+
+	Syn:		/^________$/			
+
+
+const str = "This is an example string.";
+
+if (pattern.test(str)) 
+  console.log("Pattern found!");
+else 
+  console.log("Pattern not found.");
+
+
+You can also use various regex methods like `test()`, `match()`, `replace()` to work with strings based on patterns. 
+
+
+Regular expressions are a powerful tool for working with text patterns in various programming languages, including JavaScript. They allow you to perform tasks such as searching, extracting, replacing, and validating strings based on specific patterns.
+
+Here are some key concepts and syntax for using regular expressions in JavaScript:
+
+1. **Creating Regular Expressions:**
+   - Using the `RegExp` constructor:
+     const pattern = new RegExp("pattern");
+     
+   - Using regex literals (enclosed in slashes):
+     const pattern = /pattern/;
+		 
+
+2. **Basic Patterns:**
+   - Characters: `abc` matches the characters "abc".
+   - Metacharacters: `.` matches any character except newline.
+   - Character classes: `[0-9]` matches any digit.
+   - Negation: `[^0-9]` matches any non-digit.
+   - Quantifiers: `*` (zero or more), `+` (one or more), `?` (zero or one), `{n}` (exactly n), `{n,}` (n or more), `{n,m}` (between n and m).
+
+3. **Anchors:**
+   - `^` asserts the start of a line/string.
+   - `$` asserts the end of a line/string.
+   
+4. **Groups and Alternation:**
+   - Parentheses `( )` group elements and allow for repetition or alternation.
+   - `|` alternates between multiple patterns.
+
+5. **Modifiers:**
+   - `i` performs case-insensitive matching.
+   - `g` performs global matching (finds all matches).
+   - `m` performs multiline matching.
+
+6. **Common Methods:**
+   - `test(string)`: Returns `true` if the pattern is found in the string.
+   - `exec(string)`: Returns details about the first match found.
+   - `match(pattern)`: Returns an array of matches.
+   - `replace(pattern, replacement)`: Replaces matches with the specified replacement.
+   - `search(pattern)`: Returns the index of the first match.
+   - `split(pattern)`: Splits the string into an array based on the pattern.
+
+Example:
+const str = "Hello, 123 World!";
+const pattern = /\d+/g; // Matches one or more digits
+const matches = str.match(pattern);
+console.log(matches); // Output: ["123"]
