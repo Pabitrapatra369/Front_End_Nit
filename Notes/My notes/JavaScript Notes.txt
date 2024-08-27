@@ -749,10 +749,38 @@ Methods we can write in any of 3 froms,i.e like normal function or expression or
 		refname.property=value			<--to assigning value to object
 		refname.method-name()			<--calling
 Note:
+		let k=Object.keys(emp) for accesing the properties in a array
+		let v=Object.values(emp) for accessing the values in a array
+Dom
+----
+->
+validations
+-------------
+=> form validations, client side validations, js validations
 
+types:
+	1.implicit validations
+		browsers check with support of attributes
+		Ex: email, url, date, time, min, max, required, maxlength...
+	2.explicit validations
+		using own code
+		regular expressinos(regex)
+Regular expressinos or regex are patterns used to match character combinations in strings.
 
+you can create a regex pattern using the `RegExp` constructor or by using regex literals enclosed in slash
+	syn:
+		const refvar=new RegExp(pattern);
+		const refvar=/pattern/;
+		
+		refvar.test(data) =>true, false
 
+validations
+	cross checking users given
+		=>own coding
+		=>reg exp
 
+		
+		
 
 
 

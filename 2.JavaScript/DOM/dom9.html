@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Objects</title>
+  </head>
+  <body>
+    <div align="center">
+      <h3>Dom Implementation</h3>
+      <textarea
+        name=""
+        id="ta"
+        style="width: 70%; height: 200px; font-size: 20px"
+      ></textarea>
+      <br />
+      <button id="bbt"><strong>B</strong></button>
+      <button id="ibt"><em>I</em></button>
+      <button id="sbt"><del>S</del></button>
+      <button id="ubt"><ins>U</ins></button>
+      <button id="lbt">Left</button>
+      <button id="rbt">Right</button>
+      <button id="cbt">Center</button>
+      <input type="color" id="c" />
+    </div>
+    <hr />
+
+    <script>
+      const tas = document.querySelector("#ta").style;
+      //bold button
+      document.querySelector("#bbt").onclick = function () {
+        if (tas.fontWeight === "bold") tas.fontWeight = "normal";
+        else tas.fontWeight = "bold";
+      };
+      //italic button
+      document.querySelector("#ibt").onclick = () => {
+        if (tas.fontStyle === "italic") tas.fontStyle = "normal";
+        else tas.fontStyle = "italic";
+      };
+      //strick button
+      document.querySelector("#sbt").onclick = () => {
+        if (tas.textDecoration === "line-through") tas.textDecoration = "none";
+        else tas.textDecoration = "line-through";
+      };
+      //underline button
+      document.querySelector("#ubt").onclick = () => {
+        if (tas.textDecoration === "underline") tas.textDecoration = "none";
+        else tas.textDecoration = "underline";
+      };
+      //left button
+      document.querySelector("#lbt").onclick = () => {
+        tas.textAlign = "left";
+      };
+      //right button
+      document.querySelector("#rbt").onclick = () => {
+        tas.textAlign = "right";
+      };
+      //center button
+      document.querySelector("#cbt").onclick = () => {
+        tas.textAlign = "center";
+      };
+      //color button
+      document.querySelector("#c").onchange = () => {
+        tas.color = c.value;
+      };
+    </script>
+  </body>
+</html>

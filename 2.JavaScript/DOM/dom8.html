@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Objects</title>
+  </head>
+  <body>
+    <h3>Deomo on adding & removing elements</h3>
+    <div id="div1">
+      <h1>Red Apple</h1>
+      <span>Yello Mango</span>
+      <p>Black Grapes</p>
+      <button onclick="document.querySelector('#div1').remove() ">
+        delete element
+      </button>
+    </div>
+    <hr />
+    <div id="div2">
+      <button id="bt2">add element</button>
+    </div>
+    <script>
+      document.querySelector("#bt2").onclick = function () {
+        const im = document.createElement("img"); //<img> is creating
+        im.src = "material/1.jpg";
+        im.width = "200";
+        im.style.borderRadius = "5px";
+        im.style.margin = "5px";
+
+        //document.body.appendChild(im);
+        document.querySelector("#bt1").appendChild(im);
+      };
+    </script>
+  </body>
+</html>
